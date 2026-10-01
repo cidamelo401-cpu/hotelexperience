@@ -1,0 +1,391 @@
+<title>Painel do Martim</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&display=swap">
+<style>
+/* Layout: uma coluna larga e legível, abas grandes no topo, cartões que abrem. Pensado para leitura no celular, letras grandes, sem nada para marcar. */
+:root{
+  --bg:#F2F6F5; --surface:#FFFFFF; --fg:#10252A; --muted:#475E64; --line:#CFDCDA;
+  --accent:#0B6E7F; --accent-fg:#FFFFFF; --accent-soft:#DDEFF2;
+  --sun:#8A4F00; --sun-soft:#FFEFD0;
+  --alert:#9B3519; --alert-soft:#FCE6DF;
+  --display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
+  --text:"Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0D1A1D; --surface:#14262A; --fg:#EAF3F1; --muted:#A2B8BC; --line:#2A434A;
+    --accent:#52C6D8; --accent-fg:#06222A; --accent-soft:#12363D;
+    --sun:#F2B455; --sun-soft:#3A2C12;
+    --alert:#FF9F88; --alert-soft:#3B1F19;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0D1A1D; --surface:#14262A; --fg:#EAF3F1; --muted:#A2B8BC; --line:#2A434A;
+  --accent:#52C6D8; --accent-fg:#06222A; --accent-soft:#12363D;
+  --sun:#F2B455; --sun-soft:#3A2C12;
+  --alert:#FF9F88; --alert-soft:#3B1F19;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--text);font-size:18px;line-height:1.55;padding-inline:16px;padding-block:0 56px}
+.wrap{max-width:780px;margin-inline:auto}
+h1,h2,h3{font-family:var(--display);line-height:1.15;text-wrap:balance;margin:0}
+p{margin:0}
+.top{padding-block:24px 8px}
+.eyebrow{font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700}
+h1{font-size:clamp(30px,7vw,42px);font-weight:800;margin-top:6px}
+.lead{margin-top:10px;color:var(--muted);max-width:60ch}
+nav.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:10px;display:grid;grid-template-columns:repeat(3,1fr);gap:8px;border-bottom:1px solid var(--line)}
+nav.tabs a{display:flex;align-items:center;justify-content:center;min-height:56px;border-radius:10px;border:2px solid var(--line);background:var(--surface);color:var(--fg);font-family:var(--display);font-weight:800;font-size:20px;text-decoration:none}
+nav.tabs a[aria-current="page"]{background:var(--accent);border-color:var(--accent);color:var(--accent-fg)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+section.panel{padding-block:24px}
+.panel > h2{font-size:clamp(26px,5.5vw,32px);font-weight:800}
+.panel > .lead{margin-bottom:18px}
+.stack{display:flex;flex-direction:column;gap:14px}
+
+/* kits */
+details.kit,details.day{background:var(--surface);border:2px solid var(--line);border-radius:12px}
+details[open].kit,details[open].day{border-color:var(--accent)}
+summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:center;padding:16px}
+summary::-webkit-details-marker{display:none}
+.num{display:grid;place-items:center;width:52px;height:52px;border-radius:10px;background:var(--accent);color:var(--accent-fg);font-family:var(--display);font-weight:800;font-size:26px}
+.num.fixed{background:var(--sun-soft);color:var(--sun);border:2px solid var(--sun)}
+.sum-title{font-family:var(--display);font-weight:800;font-size:22px;line-height:1.2}
+.sum-sub{color:var(--muted);font-size:17px;margin-top:2px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.tag{display:inline-block;font-size:15px;font-weight:700;padding:2px 10px;border-radius:999px;border:1.5px solid var(--line);color:var(--fg);background:var(--bg)}
+.tag.accent{background:var(--accent-soft);border-color:var(--accent);color:var(--fg)}
+.tag.sun{background:var(--sun-soft);border-color:var(--sun);color:var(--sun)}
+.tag.alert{background:var(--alert-soft);border-color:var(--alert);color:var(--alert)}
+.body{padding:4px 16px 18px;display:flex;flex-direction:column;gap:16px;border-top:1px solid var(--line)}
+.bar{display:flex;height:16px;border-radius:8px;overflow:hidden;margin-top:14px;background:var(--line)}
+.bar i{display:block;height:100%}
+.bar-legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:15px;color:var(--muted)}
+.blocks{display:flex;flex-direction:column;gap:12px}
+.block{border:1.5px solid var(--line);border-radius:10px;padding:14px;display:flex;flex-direction:column;gap:10px}
+.block h3{font-size:20px;font-weight:800;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.min{font-family:var(--text);font-size:15px;font-weight:700;background:var(--accent-soft);padding:2px 10px;border-radius:999px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.cols > div{min-width:0}
+.label{font-size:15px;letter-spacing:.07em;text-transform:uppercase;font-weight:700;color:var(--muted);margin-bottom:4px}
+ul.clean{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:3px}
+.note{background:var(--sun-soft);border-radius:10px;padding:12px 14px;color:var(--fg)}
+.note b{color:var(--sun)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+button.chip{font:inherit;font-weight:700;min-height:44px;min-width:48px;padding:6px 14px;border-radius:999px;border:2px solid var(--line);background:var(--surface);color:var(--fg);cursor:pointer}
+button.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-fg)}
+button.chip:hover{border-color:var(--accent)}
+
+/* posts */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.week{margin-top:26px}
+.week h3{font-size:19px;font-weight:800;color:var(--muted);letter-spacing:.02em;margin-bottom:12px}
+.date{display:flex;flex-direction:column;align-items:center;justify-content:center;width:62px;min-height:64px;border-radius:10px;background:var(--bg);border:2px solid var(--line)}
+.date b{font-family:var(--display);font-size:28px;line-height:1;font-weight:800}
+.date span{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+details.day.essential .date{border-color:var(--accent)}
+.field{display:flex;flex-direction:column;gap:2px}
+.field p{max-width:62ch}
+.cap{white-space:pre-wrap;word-break:break-word;font-family:var(--text);font-size:18px;background:var(--bg);border:1.5px solid var(--line);border-radius:10px;padding:14px;margin:8px 0 0;user-select:text}
+button.copy{font:inherit;font-weight:700;min-height:52px;width:100%;border-radius:10px;border:2px solid var(--accent);background:var(--accent);color:var(--accent-fg);cursor:pointer;padding:8px 16px}
+button.copy:hover{filter:brightness(1.08)}
+.hold{background:var(--alert-soft);border:2px solid var(--alert);color:var(--fg);border-radius:10px;padding:12px 14px}
+.hold b{color:var(--alert)}
+button.link{font:inherit;font-weight:700;background:none;border:none;color:var(--accent);text-decoration:underline;cursor:pointer;padding:0;min-height:32px;text-align:left}
+.empty{color:var(--muted)}
+
+/* regras */
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.rule{background:var(--surface);border:2px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:8px}
+.rule h3{font-size:21px;font-weight:800}
+.rule.strong{border-color:var(--alert)}
+.steps{counter-reset:s;list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.steps li{counter-increment:s;display:grid;grid-template-columns:40px 1fr;gap:12px;align-items:start}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--accent);color:var(--accent-fg);font-family:var(--display);font-weight:800}
+code.k{font-family:var(--display);font-weight:800;background:var(--accent-soft);padding:1px 8px;border-radius:6px}
+@media (prefers-reduced-motion:no-preference){ details>summary{transition:background .15s} summary:hover{background:var(--bg)} }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div class="eyebrow">Hotel Experience João Fernandes · Outubro de 2026</div>
+    <h1>Painel do Martim</h1>
+    <p class="lead">Aqui estão os kits de captação, a legenda de cada post e as regras do mês. Não precisa marcar nada. Depois de editar, mande o vídeo no WhatsApp para aprovação e, com o OK, poste.</p>
+  </header>
+
+  <nav class="tabs" aria-label="Seções">
+    <a href="#visitas" data-tab="visitas">Visitas</a>
+    <a href="#posts" data-tab="posts">Posts</a>
+    <a href="#regras" data-tab="regras">Regras</a>
+  </nav>
+
+  <section class="panel" id="p-visitas" data-panel="visitas">
+    <h2>Kits de captação</h2>
+    <p class="lead">Cada visita tem cerca de 2 horas. Escolha o próximo kit da fila, no horário em que a luz estiver boa. Se o dia estiver com pôr do sol bonito, faça o kit Pôr do Sol. Toda segunda, avise quais são os 2 dias da semana e qual kit vai fazer.</p>
+    <div class="stack" id="kits"></div>
+  </section>
+
+  <section class="panel" id="p-posts" data-panel="posts" hidden>
+    <h2>Posts de outubro</h2>
+    <p class="lead">Toque no dia para ver o que postar, a legenda pronta e o botão de copiar. Dias com a etiqueta vermelha ainda esperam confirmação do hotel: não poste antes de liberar.</p>
+    <div class="filters" id="filters" role="group" aria-label="Filtrar por formato"></div>
+    <div id="days"></div>
+  </section>
+
+  <section class="panel" id="p-regras" data-panel="regras" hidden>
+    <h2>Regras do mês</h2>
+    <p class="lead">O que vale para todas as visitas e todos os posts.</p>
+    <div class="rules" id="rules"></div>
+  </section>
+</div>
+
+<script>
+(function(){
+var WD=["Dom","Seg","Ter","Qua","Qui","Sex","Sáb"];
+var HOLD={
+ "V-01":"Horário do café e itens que podem aparecer",
+ "V-02":"Horário, idade e regras da área kids",
+ "V-03":"Brinquedoteca: horário e idade",
+ "V-04":"Piscina, sauna e academia: horários e restrições",
+ "V-05":"Kaliz e Duben: horários e dias",
+ "V-06":"Bar da piscina: horário e itens",
+ "V-07":"Café do dia 11/10: horário final e o que terá",
+ "V-09":"Acesso, transfer e estacionamento",
+ "V-10":"Política para crianças e berço",
+ "V-11":"Termo de imagem assinado",
+ "V-12":"Se o hotel fará Halloween",
+ "V-13":"Regras do TripAdvisor para reproduzir avaliações",
+ "V-15":"Se o cupom 5PIXEXP vale para dezembro e janeiro",
+ "V-16":"Aprovação da direção para divulgar a festa dos filhos de funcionários",
+ "V-17":"Revisão do espanhol",
+ "V-18":"Qual quarto mostrar"
+};
+
+var KITS=[
+ {id:"V1",n:"1",name:"Kit Manhã",luz:"Manhã",hora:"8h às 10h",prev:"previsão 02/10",feeds:[3,4,5,6,7],
+  prep:"Café reposto, piscina limpa, toalhas dobradas, 2 colaboradores liberados como modelos (com termo).",
+  pessoas:"2 colaboradores como modelos, com termo assinado. Nenhum hóspede com rosto.",
+  blocks:[
+   {t:"Café da manhã",m:35,f:["Salão geral","Mesa em detalhe (6 itens)","Mão servindo","Mesa posta"],v:["Push-in na mesa","Tilt do prato ao rosto de um colaborador","POV entrando no salão"]},
+   {t:"Caminho até a praia",m:45,f:["Fachada","Caminho em 5 pontos","Chegada à praia","Casal de costas (colaboradores)"],v:["Gimbal contínuo do hotel até o mar","Cronometrar o tempo a pé"]},
+   {t:"Piscina",m:40,f:["Piscina vazia","Espreguiçadeiras","Toalhas"],v:["Água em câmera lenta (60 fps)","Copo e gelo"]}]},
+ {id:"V2",n:"2",name:"Kit Sol Forte",luz:"Sol forte",hora:"11h às 13h",prev:"previsão 06/10",feeds:[8,9,14,18],
+  prep:"Um quarto vago e arrumado, brinquedoteca organizada, sauna limpa, monitor da área kids presente.",
+  pessoas:"Monitor da área kids e 1 colaborador. Sem rosto de hóspede.",
+  blocks:[
+   {t:"Quarto",m:25,f:["Cama","Banheiro","Varanda"],v:["Tour: porta → cama → banheiro → vista"]},
+   {t:"Piscina e bar",m:40,f:["Piscina com movimento, sem rosto","Bar"],v:["Pan lateral","Drink sendo preparado"]},
+   {t:"Área kids e brinquedoteca",m:30,f:["Ambientes","Brinquedos","Monitor presente"],v:["Tour de gimbal"]},
+   {t:"Sauna e academia",m:25,f:["Sauna","Academia"],v:["Plano curto de cada ambiente (opcional)"]}]},
+ {id:"V3",n:"3",name:"Café Especial de 11/10",luz:"Manhã",hora:"8h às 10h (previsto)",prev:"domingo 11/10 · data fixa",fixed:true,feeds:[11,12,14,15],
+  prep:"Decoração pronta e QR do termo de imagem na mesa. Programação confirmada pelo hotel.",
+  pessoas:"Rosto só de quem assinar o termo no QR. Sem termo, só costas, mãos e detalhes.",
+  extra:"Envie 5 fotos até as 11h para o post do dia.",
+  blocks:[
+   {t:"Montagem",m:30,f:["Mesa especial","Decoração","Itens da mesa"],v:["Time-lapse da montagem (15 s)"]},
+   {t:"Café com os hóspedes",m:60,f:["Detalhes","Mãos de crianças","Costas","Mesa cheia"],v:["Plano geral do salão, sem rostos nítidos"]},
+   {t:"Piscina e área kids",m:30,f:["Piscina sem rosto","Área kids sem rosto"],v:["Plano curto de cada ambiente"]}]},
+ {id:"V4",n:"4",name:"Festa dos Filhos de Funcionários",luz:"A definir",hora:"cerca de 2 horas",prev:"segunda 12/10 · data fixa",fixed:true,feeds:[12,13],
+  prep:"Lista de crianças autorizadas e aprovação da direção.",
+  pessoas:"Só crianças com termo escrito do funcionário responsável. Sem termo, a criança fica fora.",
+  blocks:[
+   {t:"Festa",m:120,f:["Grupo","Brincadeiras","Retratos","Detalhes da festa"],v:["3 momentos: início, meio e fim","Câmera na altura da criança"]}]},
+ {id:"V5",n:"5",name:"Kit Gastronomia",luz:"Almoço",hora:"12h às 14h",prev:"previsão 16/10",feeds:[20,21,22,23],
+  prep:"Pratos escolhidos pelo chefe, horários confirmados, cozinheiro com termo.",
+  pessoas:"Chefe ou cozinheiro, com termo.",
+  blocks:[
+   {t:"Kaliz",m:35,f:["Ambiente","3 pratos principais","Sobremesa"],v:["Empratamento (60 fps)"]},
+   {t:"Duben",m:35,f:["Ambiente","3 pratos principais","Sobremesa"],v:["Empratamento (60 fps)"]},
+   {t:"Bar",m:20,f:["Drink pronto"],v:["Drink sendo preparado"]},
+   {t:"Cozinha",m:30,f:["Cozinheiro finalizando"],v:["Preparo de 2 pratos"]}]},
+ {id:"V6",n:"6",name:"Kit Pôr do Sol",luz:"Pôr do sol",hora:"16h30 às 18h30",prev:"previsão 20/10",feeds:[24,25],
+  prep:"Iluminação do hotel acesa.",
+  pessoas:"Sem rosto de hóspede.",
+  blocks:[
+   {t:"Piscina em luz baixa",m:40,f:["Piscina com luz baixa"],v:["Plano aberto da piscina (15 s)"]},
+   {t:"Fachada iluminada",m:30,f:["Fachada"],v:["Time-lapse da fachada"]},
+   {t:"Bar",m:30,f:["Bar","Drink"],v:["Close do drink"]},
+   {t:"Recepção",m:20,f:["Recepção iluminada"],v:["Plano curto"]}]},
+ {id:"V7",n:"7",name:"Kit Humor e Famílias",luz:"Sol forte",hora:"10h às 12h",prev:"previsão 23/10",feeds:[26,27,28],
+  prep:"Toalha, chapéu, boia, livro e copo para as esquetes. 4 colaboradores com termo.",
+  pessoas:"4 colaboradores como atores. Famílias sem rosto.",
+  blocks:[
+   {t:"4 esquetes de 5 s",m:40,f:[],v:["O que dorme na espreguiçadeira","O que não sai da água","A que lê o mesmo livro","O do drink"]},
+   {t:"Piscina com famílias",m:40,f:["Famílias em 4 ambientes, sem rosto"],v:["Movimento da piscina"]},
+   {t:"Brinquedoteca e café",m:40,f:["Brinquedoteca","Mesa do café"],v:["Tour curto"]}]},
+ {id:"V8",n:"8",name:"Kit Equipe e Chegada",luz:"Manhã",hora:"manhã",prev:"previsão 27/10",feeds:[28,29,30],
+  prep:"Uniformes limpos, recepção organizada, equipe com termo.",
+  pessoas:"8 colaboradores para retrato. Casal de colaboradores na chegada.",
+  blocks:[
+   {t:"Retratos da equipe",m:40,f:["Retrato de 8 pessoas"],v:["Retrato em movimento"]},
+   {t:"Recepção e chegada",m:40,f:["Entrada e recepção","Casal chegando com mala"],v:["POV da chegada","Check-in"]},
+   {t:"Café",m:40,f:["Mesa completa"],v:["Mesa e bebida sendo servida (15 s)"]}]},
+ {id:"V9",n:"9",name:"Kit Retrospectiva",luz:"Manhã",hora:"manhã",prev:"previsão 30/10",feeds:[31],
+  prep:"Ambientes no melhor estado. Se o hotel confirmar o Halloween, decoração com termo.",
+  pessoas:"As que o hotel indicar, com termo.",
+  blocks:[
+   {t:"Melhores ângulos do mês",m:120,f:["Repetir os melhores ângulos de café, praia, piscina e restaurantes"],v:["Melhores cenas dos kits anteriores"]}]}
+];
+
+/* d: dia · f: formatos · fl: rótulo · e: essencial · o: objetivo · t: tema · h: gancho · k: kit · r: roteiro · pt/es: legenda · cp/ce: CTA · hold: códigos */
+var DAYS=[
+ {d:1,f:["foto","stories"],fl:"Foto + Stories",e:1,o:"Relacionamento",t:"Outubro chegou",h:"Outubro em Búzios: manhã sem pressa.",k:"Arquivo",r:"1 foto do arquivo, sem rosto de hóspede.",pt:"Outubro chegou. Café da manhã incluso, Praia de João Fernandes a cerca de 100 m e nenhuma pressa. 🌊\n\nQual é o seu plano para este mês?",es:"Llegó octubre. Desayuno incluido, playa de João Fernandes a unos 100 m y ninguna prisa. 🌊",cp:"Salve para planejar sua viagem.",ce:"Guardá este post para planificar tu viaje."},
+ {d:2,f:["stories"],fl:"Stories",o:"Relacionamento",t:"Dia de produção e caixinha de perguntas",h:"Chegou o fotógrafo. Mande a dúvida, a gente mostra a resposta.",k:"V1",r:"4 Stories pelo celular: Martim chegando · caixinha “O que você quer saber antes de reservar?” (em português e espanhol) · piscina pronta · “Amanhã: café e praia.”",pt:"Chegou o fotógrafo. Mande sua dúvida e a gente mostra a resposta.",es:"Llegó el fotógrafo. Mandá tu duda y te mostramos la respuesta.",cp:"Mande sua pergunta.",ce:"Mandá tu pregunta."},
+ {d:3,f:["reels"],fl:"Reels 20 s",e:1,o:"Alcance",t:"Do café à praia em cerca de 100 m",h:"Do café da manhã à praia em cerca de 100 metros.",k:"V1",r:"Café sendo servido → casal de costas sai do hotel → caminhada → mar. Texto na tela: “Café incluso → praia a ~100 m”.",pt:"Sábado começa assim: café da manhã, chinelo no pé e a Praia de João Fernandes logo ali, a cerca de 100 m.",es:"Así empieza el sábado: desayuno, sandalias y la playa de João Fernandes a unos 100 m.",cp:"Envie para quem vai com você.",ce:"Envialo a quien viaja con vos."},
+ {d:4,f:["carrossel"],fl:"Carrossel 5",e:1,o:"Relacionamento",t:"Domingo na piscina climatizada",h:"Domingo pede água, sombra e tempo.",k:"V1",r:"5 fotos da piscina, sem rosto de hóspede.",pt:"Domingo sem relógio. Piscina climatizada para adultos e crianças aproveitarem juntos.",es:"Domingo sin reloj. Piscina climatizada para disfrutar en familia o en pareja.",cp:"Marque quem iria com você.",ce:"Etiquetá a quien irías.",hold:["V-04"]},
+ {d:5,f:["carrossel"],fl:"Carrossel 5",e:1,o:"Conversão",t:"É perto da praia mesmo?",h:"Precisa de carro para ir à praia? Veja o caminho.",k:"V1",r:"Slides: pergunta · hotel · caminho · chegada · mar.",pt:"O hotel fica a cerca de 100 m da Praia de João Fernandes. Mostramos o caminho.",es:"El hotel está a unos 100 m de la playa de João Fernandes. Mirá el camino.",cp:"Veja as datas no site oficial (link na bio).",ce:"Consultá fechas en nuestro sitio oficial (link en la bio)."},
+ {d:6,f:["reels"],fl:"Reels 10 s",o:"Alcance",t:"Dez segundos de pausa",h:"Tira o som do trabalho. Põe o som da piscina.",k:"V1",r:"Sem fala. Texto na tela: “Pausa de 10 segundos.” Água em câmera lenta, copo e folhas.",pt:"Respira.",es:"Pausa de diez segundos. Respirá.",cp:"Marque quem precisa de uma pausa.",ce:"Etiquetá a quien necesita una pausa."},
+ {d:7,f:["carrossel"],fl:"Carrossel 5",e:1,o:"Conversão",t:"Café da manhã incluso: o que tem na mesa",h:"Café da manhã incluso? Veja a mesa.",k:"V1",r:"5 slides: salão, mesa, bebida sendo servida, detalhes. Só itens confirmados.",pt:"Café da manhã incluso na diária. Servido [horário confirmado].",es:"Desayuno incluido en la tarifa. Servido [horario confirmado].",cp:"Veja as datas no site oficial.",ce:"Consultá fechas en nuestro sitio oficial.",hold:["V-01"]},
+ {d:8,f:["reels"],fl:"Reels 20 s",e:1,o:"Conversão",t:"Tour pelo quarto",h:"Abrimos a porta. Veja por dentro.",k:"V2",r:"Porta → cama → detalhe → banheiro → vista. Sem metragem.",pt:"Um quarto do hotel por dentro.",es:"Un cuarto del hotel por dentro.",cp:"Veja os quartos e as datas no site oficial.",ce:"Consultá cuartos y fechas en nuestro sitio oficial.",hold:["V-18"]},
+ {d:9,f:["carrossel"],fl:"Carrossel 6",o:"Relacionamento",t:"Um dia com criança sem estresse",h:"Como é um dia com criança aqui.",k:"V2",r:"6 slides: praia · piscina · área kids · café. Sem rosto de criança.",pt:"Um dia em família sem correria. [Horário e regras da área kids confirmados].",es:"Un día en familia sin correr.",cp:"Salve para a próxima viagem em família.",ce:"Guardalo para tu próximo viaje en familia.",hold:["V-02"]},
+ {d:10,f:["stories","foto"],fl:"Stories ou foto",o:"Relacionamento",t:"Amanhã, café especial",h:"Amanhã tem café especial para os pequenos.",k:"Arquivo",r:"Story ou foto do arquivo com o texto do teaser.",pt:"Amanhã, café da manhã especial para os hóspedes.",es:"Mañana, desayuno especial para los huéspedes.",cp:"",ce:"",hold:["V-07"]},
+ {d:11,f:["stories","foto"],fl:"Stories + Foto",e:1,o:"Relacionamento",t:"Café especial do Dia das Crianças",h:"O café da manhã de hoje é diferente.",k:"V3",r:"Stories ao vivo + 1 foto da mesa especial e dos detalhes. Rosto só de quem assinou o termo. Envie 5 fotos até as 11h.",pt:"Hoje o café da manhã foi pensado para os pequenos.",es:"Hoy el desayuno fue especial para los más chicos.",cp:"",ce:"",hold:["V-07","V-11"]},
+ {d:12,f:["foto","stories"],fl:"Foto + Stories",e:1,o:"Relacionamento",t:"Dia das Crianças",h:"Hoje é dia deles.",k:"V3 e V4",r:"1 foto do café (sem rosto) + Stories da festa dos filhos de funcionários, só com termo.",pt:"Feliz Dia das Crianças!",es:"¡Feliz Día das Crianças! Hoy en Brasil celebramos a los más chicos.",cp:"",ce:"",hold:["V-07","V-16"]},
+ {d:13,f:["reels"],fl:"Reels 25 s",e:1,o:"Prova social",t:"Os filhos de quem cuida de você",h:"Hoje o hotel foi deles.",k:"V4",r:"Brincadeiras, risadas, equipe e filhos, em ordem cronológica. Sem criança isolada.",pt:"Quem faz o hotel funcionar também tem criança em casa.",es:"Quienes hacen funcionar el hotel también tienen niños en casa.",cp:"",ce:"",hold:["V-16","V-11"]},
+ {d:14,f:["carrossel"],fl:"Carrossel 6",e:1,o:"Conversão",t:"Férias de verão com criança: dúvidas",h:"O que perguntam antes de reservar com criança.",k:"V2 e V3",r:"6 slides: café incluso · área kids · brinquedoteca · praia a ~100 m · piscina · chamada.",pt:"Perguntas de quem vai viajar com criança: café da manhã incluso, área kids com monitoria, brinquedoteca, praia a cerca de 100 m e piscina climatizada. [Horários e regras confirmados]",es:"Preguntas de quienes viajan con niños: desayuno incluido, área kids con monitoría, sala de juegos, playa a unos 100 m y piscina climatizada.",cp:"Veja datas de dezembro e janeiro no site oficial.",ce:"Consultá fechas de diciembre y enero en nuestro sitio oficial.",hold:["V-02","V-03","V-10"]},
+ {d:15,f:["foto"],fl:"Foto",o:"Alcance",t:"Fim de tarde",h:"O dia termina assim.",k:"Arquivo",r:"1 foto do arquivo.",pt:"Fim de tarde no hotel.",es:"Atardecer en el hotel.",cp:"Marque seu par de viagem.",ce:"Etiquetá a tu compañero o compañera de viaje."},
+ {d:16,f:["carrossel"],fl:"Carrossel 5",e:1,o:"Prova social",t:"O que dizem no TripAdvisor",h:"Não somos nós que dizemos.",k:"Sem captação",r:"4 avaliações reais: trecho literal + fonte + mês. Preferir as em espanhol. Plano B: FAQ de casais.",pt:"Avaliações reais de hóspedes no TripAdvisor. [Trecho literal e mês]",es:"Reseñas reales de huéspedes en TripAdvisor.",cp:"Leia mais no TripAdvisor (link no Stories).",ce:"Leé más reseñas en TripAdvisor (link en Stories).",hold:["V-13"]},
+ {d:17,f:["foto"],fl:"Foto",o:"Relacionamento",t:"A dois",h:"Dois cafés, uma praia, nenhum compromisso.",k:"Arquivo",r:"1 foto do arquivo com modelos.",pt:"Para a escapada a dois.",es:"Para escaparse de a dos.",cp:"Envie para o seu par.",ce:"Envialo a tu pareja."},
+ {d:18,f:["carrossel"],fl:"Carrossel 4",o:"Relacionamento",t:"Sauna e descanso",h:"Domingo de desacelerar.",k:"V2",r:"4 slides: sauna, academia, ambiente, detalhe.",pt:"Sauna e academia para o ritmo que você quiser. [Horário confirmado].",es:"Sauna y gimnasio, a tu ritmo.",cp:"Salve.",ce:"Guardalo.",hold:["V-04"]},
+ {d:19,f:["carrossel"],fl:"Carrossel 5",e:1,o:"Conversão",t:"Como reservar no site oficial, passo a passo",h:"Como ver as datas de janeiro no nosso site.",k:"Gravação de tela",r:"Gravação de tela do motor: escolher datas · adultos e crianças · ver quartos · confirmar. Sem preço.",pt:"Como ver as datas de janeiro no nosso site, passo a passo. Pagando no Pix, use o cupom 5PIXEXP e ganhe 5% de desconto.",es:"Cómo ver las fechas en nuestro sitio oficial, paso a paso.",cp:"Faça sua reserva no site oficial e use o cupom 5PIXEXP (link na bio).",ce:"Consultá fechas en nuestro sitio oficial.",hold:["V-15"]},
+ {d:20,f:["reels"],fl:"Reels 20 s",e:1,o:"Alcance",t:"Kaliz ou Duben?",h:"Dois restaurantes, um hotel.",k:"V5",r:"Ambiente Kaliz → prato → ambiente Duben → prato.",pt:"Dois restaurantes, um hotel. Qual você escolhe?",es:"Dos restaurantes, un hotel. ¿Cuál elegís?",cp:"Comente K ou D.",ce:"Comentá K o D.",hold:["V-05"]},
+ {d:21,f:["carrossel"],fl:"Carrossel 5",o:"Conversão",t:"A dois: três momentos",h:"Para escapar a dois.",k:"V5 e arquivo",r:"5 slides: café sem pressa · sauna · fim de tarde · jantar. Só o que o hotel confirmar.",pt:"Café sem pressa, sauna e fim de tarde: três momentos para escapar a dois. [Itens confirmados]",es:"Desayuno sin prisa, sauna y atardecer: tres momentos para escaparse de a dos.",cp:"Veja as datas no site oficial.",ce:"Consultá fechas en nuestro sitio oficial.",hold:["V-04","V-05","V-06"]},
+ {d:22,f:["reels"],fl:"Reels 20 s",o:"Relacionamento",t:"Bastidores da cozinha",h:"Ninguém vê isso quando o prato chega.",k:"V5",r:"Preparo → empratamento → saída do prato.",pt:"Antes de chegar à mesa.",es:"Antes de llegar a la mesa.",cp:"Qual prato você quer ver?",ce:"¿Qué plato querés ver?",hold:["V-05","V-11"]},
+ {d:23,f:["carrossel"],fl:"Carrossel 6",e:1,o:"Conversão",t:"Verão em Búzios: dezembro e janeiro no hotel",h:"Dezembro e janeiro: o que o hotel oferece.",k:"Arquivo e V5",r:"6 slides, um serviço por slide. Sem prometer disponibilidade.",pt:"Dezembro e janeiro em Búzios: piscina, café da manhã incluso, praia a cerca de 100 m e área kids. Pagando no Pix, 5% de desconto com o cupom 5PIXEXP.",es:"Verano en Búzios: diciembre y enero en el hotel. Piscina, desayuno incluido y playa a unos 100 m.",cp:"Veja as datas de dezembro e janeiro no site oficial e use o cupom 5PIXEXP.",ce:"Consultá fechas en nuestro sitio oficial.",hold:["V-15","V-02"]},
+ {d:24,f:["reels"],fl:"Reels 15 s",e:1,o:"Alcance",t:"Fim de tarde na piscina",h:"A melhor hora do hotel é esta.",k:"V6",r:"Piscina em luz baixa, 15 s, iluminação acesa.",pt:"A luz baixa na piscina climatizada.",es:"La luz baja en la piscina.",cp:"Salve para lembrar.",ce:"Guardalo para recordar."},
+ {d:25,f:["stories"],fl:"Stories",o:"Relacionamento",t:"Respondendo suas perguntas",h:"Vocês perguntaram. A gente respondeu.",k:"V1 a V6",r:"5 a 7 Stories, uma pergunta por Story, com as respostas da caixinha do dia 2. Sem política (2º turno).",pt:"Vocês perguntaram. A gente respondeu.",es:"Ustedes preguntaron. Respondimos.",cp:"Pergunte no direct.",ce:"Preguntá por mensaje directo."},
+ {d:26,f:["carrossel"],fl:"Carrossel 5",e:1,o:"Conversão",t:"Primeira vez em Búzios?",h:"Antes de reservar em Búzios, pergunte isto.",k:"V7 e arquivo",r:"5 slides: distância da praia · café incluso · área kids · piscina · pergunte tudo ao hotel.",pt:"Antes de reservar em Búzios, pergunte isto: distância da praia (cerca de 100 m), café incluso, área kids e piscina.",es:"Antes de reservar en Búzios, preguntá esto: distancia a la playa (unos 100 m), desayuno incluido, área kids y piscina.",cp:"Veja janeiro no site oficial.",ce:"Consultá enero en nuestro sitio oficial.",hold:["V-09","V-10"]},
+ {d:27,f:["reels"],fl:"Reels 20 s",e:1,o:"Alcance",t:"Os 4 tipos de hóspede da piscina",h:"Todo hotel tem esses quatro.",k:"V7",r:"4 esquetes de 5 s com colaboradores: dorme na espreguiçadeira · não sai da água · lê o mesmo livro · o do drink.",pt:"Todo hotel tem esses quatro. Qual é o seu?",es:"Todo hotel tiene estos cuatro. ¿Cuál sos vos?",cp:"Qual é o seu tipo?",ce:"¿Cuál es tu tipo?",hold:["V-11"]},
+ {d:28,f:["carrossel"],fl:"Carrossel 5",e:1,o:"Conversão",t:"Verano en Búzios: ¿planificás enero?",h:"Verano en Búzios: lo que tenés que saber.",k:"V8",r:"5 slides: acesso · praia a ~100 m · café incluso · área kids. Espanhol primeiro, legenda em português.",pt:"Verão em Búzios: o que você precisa saber. Praia a cerca de 100 m, café da manhã incluso e área kids.",es:"Verano en Búzios: lo que tenés que saber. Playa a unos 100 m, desayuno incluido y área kids.",cp:"Veja as datas no site oficial.",ce:"Consultá las fechas en nuestro sitio oficial.",hold:["V-09","V-17"]},
+ {d:29,f:["foto"],fl:"Foto",o:"Relacionamento",t:"Quem cuida da sua estadia",h:"Esta é a pessoa que prepara sua manhã.",k:"V8",r:"Retrato da pessoa da equipe, uniforme limpo.",pt:"[Nome], [função]. Qual é a sua parte favorita do café?",es:"[Nombre], [función].",cp:"Deixe um oi.",ce:"Dejá un hola.",hold:["V-11"]},
+ {d:30,f:["reels"],fl:"Reels 15 s",o:"Alcance",t:"Sexta começa assim",h:"A sexta tem cheiro de café.",k:"V8",r:"Mesa de café completa, 15 s.",pt:"Bom dia, fim de semana.",es:"Buen día, fin de semana.",cp:"Envie para quem vem com você.",ce:"Envialo a quien viaja con vos."},
+ {d:31,f:["reels"],fl:"Reels 30 s",e:1,o:"Relacionamento",t:"Outubro em 30 segundos",h:"Este foi o nosso outubro.",k:"V9",r:"30 segundos com os 8 melhores clipes do mês.",pt:"Este foi o nosso outubro. Obrigado por acompanhar.",es:"Así fue nuestro octubre. Gracias por acompañarnos.",cp:"Planeje suas férias de verão: veja as datas no site oficial e use o cupom 5PIXEXP.",ce:"Consultá fechas en nuestro sitio oficial.",hold:["V-12","V-15"]}
+];
+
+var WEEKS=[[1,4,"1 a 4 de outubro"],[5,11,"5 a 11 de outubro"],[12,18,"12 a 18 de outubro"],[19,25,"19 a 25 de outubro"],[26,31,"26 a 31 de outubro"]];
+var RULES=[
+ {t:"Sem rosto de hóspede",s:1,b:"<p>Mostre costas, mãos, pés, silhuetas e detalhes. Rosto só de colaborador com termo ou de hóspede que assinou o termo.</p>"},
+ {t:"Criança",s:1,b:"<p>Só com termo do responsável, sempre perto do responsável e longe de bebida alcoólica.</p>"},
+ {t:"Como postar",b:"<ol class='steps'><li>Abra o dia na aba Posts.</li><li>Faça a edição e copie a legenda pronta.</li><li>Mande o vídeo no WhatsApp para aprovação.</li><li>Com o OK, poste. Se houver etiqueta vermelha, espere o hotel liberar.</li></ol>"},
+ {t:"Formato técnico",b:"<ul class='clean'><li>Vídeo vertical 9:16, 4K, 30 fps.</li><li>60 fps para água e câmera lenta.</li><li>Fotos na vertical e na horizontal.</li></ul>"},
+ {t:"Cupom nos posts",b:"<p>Escreva <code class='k'>5% no Pix com o cupom 5PIXEXP</code>, só nos posts em português. Não escreva “melhor preço” nem compare com outros sites.</p>"},
+ {t:"Toda segunda",b:"<p>Avise os 2 dias da semana e qual kit vai fazer. Se o kit atrasar, o post sai do arquivo e o kit entra na visita seguinte.</p>"},
+ {t:"Dias especiais",b:"<ul class='clean'><li>Domingo, 11/10: café especial dos hóspedes.</li><li>Segunda, 12/10: festa dos filhos de funcionários.</li></ul>"},
+ {t:"Eleições",b:"<p>Nos dias 04/10 e 25/10, sem nenhuma referência política. Conteúdo leve.</p>"}
+];
+
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function li(a){return a.length?'<ul class="clean">'+a.map(function(x){return "<li>"+esc(x)+"</li>"}).join("")+"</ul>":'<p class="empty">Só vídeo.</p>'}
+function $(s,r){return (r||document).querySelector(s)}
+
+/* kits */
+var segCol=["58%","40%","76%","28%"];
+function kitHTML(k,i){
+  var tot=k.blocks.reduce(function(a,b){return a+b.m},0);
+  var bar=k.blocks.map(function(b,j){return '<i style="width:'+(b.m/tot*100)+'%;background:color-mix(in srgb,var(--accent) '+segCol[j%4]+',var(--surface))"></i>'}).join("");
+  var leg=k.blocks.map(function(b,j){return '<span>'+esc(b.t)+' · '+b.m+' min</span>'}).join("");
+  var blocks=k.blocks.map(function(b){
+    return '<div class="block"><h3>'+esc(b.t)+' <span class="min">'+b.m+' min</span></h3><div class="cols"><div><div class="label">Fotos</div>'+li(b.f)+'</div><div><div class="label">Vídeos verticais</div>'+li(b.v)+'</div></div></div>';
+  }).join("");
+  var feeds=k.feeds.map(function(n){return '<button type="button" class="chip" data-day="'+n+'">Dia '+n+'</button>'}).join("");
+  return '<details class="kit" id="kit-'+k.id+'"'+(i===0?' open':'')+'><summary><span class="num'+(k.fixed?' fixed':'')+'">'+k.n+'</span><span><span class="sum-title">'+esc(k.name)+'</span><span class="sum-sub" style="display:block">'+esc(k.hora)+' · 2 horas</span><span class="tags"><span class="tag '+(k.fixed?'sun':'accent')+'">'+esc(k.luz)+'</span><span class="tag'+(k.fixed?' sun':'')+'">'+esc(k.prev)+'</span></span></span></summary><div class="body"><div><div class="bar" aria-hidden="true">'+bar+'</div><div class="bar-legend" style="margin-top:8px">'+leg+'</div></div>'+(k.extra?'<div class="note"><b>Atenção:</b> '+esc(k.extra)+'</div>':'')+'<div class="blocks">'+blocks+'</div><div class="cols"><div><div class="label">Pessoas e autorizações</div><p>'+esc(k.pessoas)+'</p></div><div><div class="label">O hotel deixa pronto</div><p>'+esc(k.prep)+'</p></div></div><div><div class="label">Este material vira os posts dos dias</div><div class="chips">'+feeds+'</div></div></div></details>';
+}
+$("#kits").innerHTML=KITS.map(kitHTML).join("");
+
+/* posts */
+var filter="todos";
+var FILTERS=[["todos","Todos"],["essencial","Essenciais"],["reels","Reels"],["carrossel","Carrossel"],["foto","Foto"],["stories","Stories"]];
+function dayHTML(x){
+  var wd=WD[new Date(Date.UTC(2026,9,x.d)).getUTCDay()];
+  var holdTags=x.hold?'<span class="tag alert">Aguardar o hotel</span>':'';
+  var kitLink=/^V\d/.test(x.k)?'<button type="button" class="link" data-kit="'+x.k.split(" ")[0]+'">'+esc(x.k)+' (ver kit)</button>':esc(x.k);
+  var holdBox=x.hold?'<div class="hold"><b>Não poste ainda.</b> Confirmar com o hotel:<ul class="clean">'+x.hold.map(function(c){return "<li>"+esc(HOLD[c]||c)+" ("+c+")</li>"}).join("")+'</ul></div>':'';
+  var ptFull=x.pt+(x.cp?"\n\n"+x.cp:"");
+  var esFull=x.es+(x.ce?"\n\n"+x.ce:"");
+  return '<details class="day'+(x.e?' essential':'')+'" id="day-'+x.d+'" data-d="'+x.d+'"><summary><span class="date"><b>'+x.d+'</b><span>'+wd+'</span></span><span><span class="sum-title">'+esc(x.t)+'</span><span class="tags"><span class="tag accent">'+esc(x.fl)+'</span>'+(x.e?'<span class="tag sun">Essencial</span>':'')+holdTags+'</span></span></summary><div class="body">'+holdBox+
+   '<div class="field"><div class="label">Começar com</div><p>“'+esc(x.h)+'”</p></div>'+
+   '<div class="field"><div class="label">O que fazer</div><p>'+esc(x.r)+'</p></div>'+
+   '<div class="field"><div class="label">Material vem de</div><p>'+kitLink+'</p></div>'+
+   '<div class="field"><div class="label">Legenda em português</div><button type="button" class="copy" data-copy="pt" data-l="Copiar legenda em português">Copiar legenda em português</button><pre class="cap" id="pt-'+x.d+'">'+esc(ptFull)+'</pre></div>'+
+   '<div class="field"><div class="label">Legenda em espanhol</div><button type="button" class="copy" data-copy="es" data-l="Copiar legenda em espanhol">Copiar legenda em espanhol</button><pre class="cap" id="es-'+x.d+'">'+esc(esFull)+'</pre></div>'+
+   '<div class="field"><div class="label">Objetivo do post</div><p>'+esc(x.o)+'</p></div></div></details>';
+}
+function match(x){
+  if(filter==="todos")return true;
+  if(filter==="essencial")return !!x.e;
+  return x.f.indexOf(filter)>-1;
+}
+function renderDays(){
+  var out="";
+  WEEKS.forEach(function(w){
+    var items=DAYS.filter(function(x){return x.d>=w[0]&&x.d<=w[1]&&match(x)});
+    if(!items.length)return;
+    out+='<div class="week"><h3>'+w[2]+'</h3><div class="stack">'+items.map(dayHTML).join("")+'</div></div>';
+  });
+  $("#days").innerHTML=out||'<p class="empty">Nenhum post neste filtro.</p>';
+}
+function renderFilters(){
+  $("#filters").innerHTML=FILTERS.map(function(f){return '<button type="button" class="chip" data-f="'+f[0]+'" aria-pressed="'+(f[0]===filter)+'">'+f[1]+'</button>'}).join("");
+}
+renderFilters();renderDays();
+
+/* regras */
+$("#rules").innerHTML=RULES.map(function(r){return '<div class="rule'+(r.s?' strong':'')+'"><h3>'+esc(r.t)+'</h3>'+r.b+'</div>'}).join("");
+
+/* abas */
+var TABS=["visitas","posts","regras"];
+function showTab(t){
+  if(TABS.indexOf(t)<0)t="visitas";
+  TABS.forEach(function(n){
+    $("#p-"+n).hidden=(n!==t);
+    var a=$('nav.tabs a[data-tab="'+n+'"]');
+    if(n===t)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current");
+  });
+}
+function route(){showTab((location.hash||"").replace("#",""))}
+window.addEventListener("hashchange",route);route();
+
+function go(tab){ if(location.hash!=="#"+tab){location.hash=tab} showTab(tab); }
+function openDay(n){
+  if(filter!=="todos"){filter="todos";renderFilters();renderDays()}
+  go("posts");
+  var el=document.getElementById("day-"+n);
+  if(el){el.open=true;setTimeout(function(){el.scrollIntoView({block:"start"})},30)}
+}
+function openKit(id){
+  go("visitas");
+  var el=document.getElementById("kit-"+id);
+  if(el){el.open=true;setTimeout(function(){el.scrollIntoView({block:"start"})},30)}
+}
+
+/* copiar */
+function fallbackCopy(pre,btn){
+  try{var r=document.createRange();r.selectNodeContents(pre);var s=window.getSelection();s.removeAllRanges();s.addRange(r);
+    var ok=document.execCommand&&document.execCommand("copy");
+    btn.textContent=ok?"Copiado":"Texto selecionado: copie com o dedo";
+  }catch(e){btn.textContent="Texto selecionado: copie com o dedo"}
+  setTimeout(function(){btn.textContent=btn.dataset.l},2400);
+}
+function doCopy(btn){
+  var det=btn.closest("details.day"),n=det.dataset.d,lang=btn.dataset.copy;
+  var pre=document.getElementById(lang+"-"+n);
+  var text=pre.textContent;
+  var done=function(){btn.textContent="Copiado";setTimeout(function(){btn.textContent=btn.dataset.l},2000)};
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(done).catch(function(){fallbackCopy(pre,btn)});
+  }else fallbackCopy(pre,btn);
+}
+
+document.addEventListener("click",function(e){
+  var t=e.target.closest("button");
+  if(!t)return;
+  if(t.dataset.copy)return doCopy(t);
+  if(t.dataset.f){filter=t.dataset.f;renderFilters();renderDays();return}
+  if(t.dataset.day)return openDay(+t.dataset.day);
+  if(t.dataset.kit)return openKit(t.dataset.kit);
+});
+})();
+</script>
