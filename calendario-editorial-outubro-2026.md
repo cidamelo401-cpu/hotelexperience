@@ -17,7 +17,7 @@ Nada aqui afirma preço, promoção, disponibilidade de quarto ou condição com
 
 **Link do motor (Omnibees):** https://book.omnibees.com/hotel/2093
 
-**Destino de toda conversão:** o link da bio e o link dos Stories levam ao **motor de reservas** O motor mostra a disponibilidade real, então o CTA é "veja as datas no site oficial", sem prometer nada. O rastreio por UTM depende da resposta do Minibis (pendente). Enquanto isso, **meça pelo cupom**: recomendo um código exclusivo para o Instagram (decisão do hotel), que mostra quantas reservas vieram daqui sem depender de UTM. Dúvidas vão para DM, respondidas pela pessoa do hotel responsável.
+**Destino de toda conversão:** o link da bio e o link dos Stories levam ao **motor de reservas** O motor mostra a disponibilidade real, então o CTA é "veja as datas no site oficial", sem prometer nada. O rastreio por UTM depende da resposta do Minibis (pendente). Atenção: o 5PIXEXP vale sempre e para todos os canais, então **não mede o Instagram sozinho**. Para medir, recomendo um segundo cupom exclusivo do Instagram (decisão do hotel) ou perguntar "como nos conheceu?" nas DMs e na recepção. Dúvidas vão para DM, respondidas pela pessoa do hotel responsável.
 
 **Público**
 - Famílias com crianças: decidem por segurança, praticidade, "o que as crianças fazem" e distância da praia.
@@ -54,7 +54,7 @@ Nada aqui afirma preço, promoção, disponibilidade de quarto ou condição com
 
 **Recomendação estratégica (opinião, não fato):** vender janeiro só com post orgânico é lento. Recomendo **testar anúncios** dos melhores Reels, com link para o motor, para Argentina, Uruguai, Chile e Sudeste do Brasil, e remarketing se o motor aceitar o pixel da Meta. Verba e período são decisão do hotel. Sem isso, o calendário continua válido, só que mais lento.
 
-**Argumento da reserva direta:** o hotel tem **cupom de desconto** que deixa o valor mais barato no site oficial do que em outros canais. É o melhor CTA de conversão. Regras: (a) divulgar só o texto exato aprovado pelo hotel; (b) nunca citar percentual, valor ou "melhor preço" sem aprovação; (c) informar código, validade, datas em que vale e se vale para dezembro e janeiro (V-15). Use o CTA com cupom em poucos posts (19, 23 e 31) e nos Stories, para não virar propaganda o tempo todo.
+**Argumento da reserva direta:** cupom **5PIXEXP = 5% de desconto pagando no Pix**, sempre disponível no site oficial. É o melhor CTA de conversão. Regras: (a) citar só "5% no Pix com o cupom 5PIXEXP"; não escrever "melhor preço" nem comparar com outros canais sem aprovação; (b) **só nos posts em português**: Pix exige conta brasileira e o público argentino, uruguaio e chileno provavelmente não consegue usar (a confirmar com o hotel); nos posts em espanhol, o CTA é "consultá fechas en nuestro sitio oficial"; (c) confirmar se o cupom vale para dezembro e janeiro (V-15). Use o CTA com cupom em poucos posts (19, 23 e 31) e nos Stories, para não virar propaganda o tempo todo.
 
 **Cuidados do mês**
 - **Eleições** (04/10 e 25/10): sem política. Conteúdo leve.
@@ -104,11 +104,11 @@ Códigos de cena (coluna "Martim"): **V1 a V9** = visita (seção 3). "Arquivo" 
 
 | Data | Obj. | Tema e ideia central | Formato | Gancho | Martim | Preparar | Legenda / roteiro | CTA | Idioma | Indicador |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Seg 19/10 ★ | C | **Como reservar no site oficial, passo a passo.** Gravação de tela do motor. **⚠ V-14, V-15** | Carrossel 5 | "Como ver as datas de janeiro no nosso site." | — (gravação de tela) | Gravar tela do motor; sem preço | Escolher datas · adultos e crianças · ver quartos · confirmar.<br>ES: versão completa | "Faça sua reserva no site oficial e use o cupom [CÓDIGO] (link na bio)." | Bilíngue | Cliques no link |
+| Seg 19/10 ★ | C | **Como reservar no site oficial, passo a passo.** Gravação de tela do motor. **⚠ V-14, V-15** | Carrossel 5 | "Como ver as datas de janeiro no nosso site." | — (gravação de tela) | Gravar tela do motor; sem preço | Escolher datas · adultos e crianças · ver quartos · confirmar.<br>ES: versão completa | "Faça sua reserva no site oficial e use o cupom 5PIXEXP (5% no Pix) (link na bio)." | Bilíngue | Cliques no link |
 | Ter 20/10 ★ | A | **Kaliz ou Duben?** **⚠ V-05** | Reels 20 s | "Dois restaurantes, um hotel." | V5 | Pratos do chefe | Ambiente → prato → ambiente → prato.<br>Legenda: "Qual você escolhe?"<br>ES: "¿Cuál elegís?" | "Comente K ou D." | Bilíngue | Comentários |
 | Qua 21/10 | C | **A dois: três momentos.** **⚠ V-04, V-05, V-06** | Carrossel 5 | "Para escapar a dois." | V5 + arquivo | Modelos | Café sem pressa · sauna · fim de tarde · jantar. Só o confirmado.<br>ES: versão completa | "Veja as datas no site oficial." | Bilíngue | Cliques no link |
 | Qui 22/10 | R | **Bastidores da cozinha.** **⚠ V-05** | Reels 20 s | "Ninguém vê isso quando o prato chega." | V5 | Cozinheiro com termo | Preparo → empratamento → saída.<br>ES: "Antes de llegar a la mesa." | "Qual prato você quer ver?" | Bilíngue | Comentários |
-| Sex 23/10 ★ | C | **Verão em Búzios: dezembro e janeiro no hotel. ⚠ V-15** Piscina, café, praia a ~100 m, área kids. | Carrossel 6 | "Dezembro e janeiro: o que o hotel oferece." | Arquivo + V5 | Só serviços confirmados | Cada slide é um serviço.<br>ES: "Verano en Búzios: diciembre y enero."<br>Sem prometer disponibilidade. | "Veja as datas de dezembro e janeiro no site oficial e use o cupom [CÓDIGO]." | Bilíngue | Cliques no link |
+| Sex 23/10 ★ | C | **Verão em Búzios: dezembro e janeiro no hotel. ⚠ V-15** Piscina, café, praia a ~100 m, área kids. | Carrossel 6 | "Dezembro e janeiro: o que o hotel oferece." | Arquivo + V5 | Só serviços confirmados | Cada slide é um serviço.<br>ES: "Verano en Búzios: diciembre y enero."<br>Sem prometer disponibilidade. | "Veja as datas de dezembro e janeiro no site oficial e use o cupom 5PIXEXP (5% no Pix)." | Bilíngue | Cliques no link |
 | Sáb 24/10 ★ | A | **Fim de tarde na piscina.** | Reels 15 s | "A melhor hora do hotel é esta." | V6 | Iluminação acesa | "A luz baixa na piscina climatizada."<br>ES: "La luz baja en la piscina." | "Salve para lembrar." | Bilíngue | Salvamentos |
 | Dom 25/10 | R | **Respondendo suas perguntas.** Stories com a caixinha do dia 02. | Stories | "Vocês perguntaram. A gente respondeu." | V1 a V6 | Respostas validadas | Um Story por pergunta. Sem política (2º turno). | "Pergunte no direct." | Bilíngue | Respostas |
 
@@ -121,7 +121,7 @@ Códigos de cena (coluna "Martim"): **V1 a V9** = visita (seção 3). "Arquivo" 
 | Qua 28/10 ★ | C | **Verano en Búzios: ¿planificás enero?** Espanhol primeiro. **⚠ V-09, V-17** | Carrossel 5 | "Verano en Búzios: lo que tenés que saber." | V8 | Info de acesso validada | Acesso · praia a ~100 m · café incluso · área kids.<br>PT na legenda. | "Consultá las fechas en nuestro sitio oficial." | Espanhol com legenda PT | Cliques no link, DMs em ES |
 | Qui 29/10 | R | **Quem cuida da sua estadia.** **⚠ V-11** | Foto | "Esta é a pessoa que prepara sua manhã." | V8 | Termo da equipe | "[Nome], [função]. Qual é a sua parte favorita do café?"<br>ES: "[Nombre], [función]." | "Deixe um oi." | Bilíngue | Comentários |
 | Sex 30/10 | A | **Sexta começa assim.** | Reels 15 s | "A sexta tem cheiro de café." | V8 | Mesa completa | "Bom dia, fim de semana."<br>ES: "Buen día, fin de semana." | "Envie para quem vem com você." | Bilíngue | Compartilhamentos |
-| Sáb 31/10 ★ | R | **Outubro em 30 segundos.** Retrospectiva real. Halloween só se confirmado. **⚠ V-12** | Reels 30 s | "Este foi o nosso outubro." | V9 + melhores momentos | 8 melhores clipes | "Obrigado por acompanhar."<br>ES: "Gracias por acompañarnos." | "Planeje suas férias de verão: veja as datas no site oficial e use o cupom [CÓDIGO]." | Bilíngue | Seguidores novos, cliques |
+| Sáb 31/10 ★ | R | **Outubro em 30 segundos.** Retrospectiva real. Halloween só se confirmado. **⚠ V-12** | Reels 30 s | "Este foi o nosso outubro." | V9 + melhores momentos | 8 melhores clipes | "Obrigado por acompanhar."<br>ES: "Gracias por acompañarnos." | "Planeje suas férias de verão: veja as datas no site oficial e use o cupom 5PIXEXP (5% no Pix)." | Bilíngue | Seguidores novos, cliques |
 
 ---
 
@@ -232,7 +232,7 @@ Códigos de cena (coluna "Martim"): **V1 a V9** = visita (seção 3). "Arquivo" 
 | V-12 | Halloween: o hotel fará algo? | 31 | 20/10 |
 | V-13 | Regras do TripAdvisor para reproduzir avaliações | 16 | 12/10 |
 | V-14 | Link do motor (Minibis): UTM, pixel Meta, relatório por origem. **Pendente.** Enquanto isso, usar https://book.omnibees.com/hotel/2093 e medir pelo cupom | 05, 19 e todos com CTA | quando o Minibis responder |
-| V-15 | Cupom: código, validade, datas em que vale (dez/jan?), texto aprovado, se pode citar "mais barato" | 19, 23, 31 | 15/10 |
+| V-15 | Cupom 5PIXEXP (5% no Pix): vale para dez/jan? Estrangeiros conseguem pagar no Pix? Pode citar "mais barato"? Pode haver 2º cupom só do Instagram? | 19, 23, 31 | 15/10 |
 | V-16 | Direção aprova divulgar a festa dos filhos de funcionários; termos assinados | 12, 13 | 10/10 |
 | V-17 | Revisão do espanhol por falante nativo | bilíngues | contínuo |
 | V-18 | Qual quarto mostrar | 08 | 02/10 |
@@ -293,7 +293,7 @@ TODA SEGUNDA: me avisa os 2 dias da semana e qual kit vai fazer. Se o dia estive
 | Todos os dias | Postar o conteúdo do dia; 3 a 5 Stories; responder comentários e DMs **2 vezes ao dia** (manhã e fim de tarde), com respostas salvas em PT e ES | 20 min |
 | Sexta | Atualizar planilha: seguidores novos, % dos países-alvo, alcance de não seguidores, salvamentos, compartilhamentos, cliques no link (motor), conversas iniciadas, reservas diretas (o hotel informa) | 20 min |
 
-**Rastreamento:** (1) cupom exclusivo do Instagram, que funciona já; (2) UTM no link, quando o Minibis confirmar.
+**Rastreamento:** (1) cupom exclusivo do Instagram, se o hotel criar (o 5PIXEXP é geral); (2) pergunta "como nos conheceu?" nas conversas; (3) UTM no link, quando o Omnibees confirmar.
 
 ### 5.4 Termo de imagem e TripAdvisor
 
@@ -349,6 +349,6 @@ Obrigada!
 ```
 
 **Do hotel, ainda preciso de:**
-1. Cupom: código, validade, datas em que vale (dezembro e janeiro?), texto aprovado e se pode citar "mais barato" (V-15).
+1. Cupom 5PIXEXP: vale para dezembro e janeiro? Hóspede estrangeiro consegue pagar no Pix? Dá para criar um 2º cupom só do Instagram para medir? (V-15)
 2. Confirmação final do horário do café de 11/10 (V-07).
 3. Se a pessoa que responde as DMs tem treinamento nas respostas em espanhol e nas regras do cupom.
