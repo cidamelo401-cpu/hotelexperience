@@ -212,6 +212,15 @@ Códigos de cena (coluna "Martim"): **V1 a V9** = visita (seção 3). "Arquivo" 
 **Abastece:** 31/10 e início de novembro
 - Repetir os melhores ângulos do mês. Se o hotel confirmar o Halloween (V-12), incluir decoração com termo.
 
+### KIT CHUVA · plano B de qualquer visita
+Se estiver chovendo no dia da visita, faça este kit no lugar do kit da vez; o kit atrasado entra na visita seguinte. Em trovoada, nada ao ar livre.
+- **A chuva vista de dentro.** Fotos: janela com gotas, bebida quente na mesa, guarda-chuva na entrada. Vídeo: gotas na janela (60 fps), piscina com chuva.
+- **Piscina climatizada na chuva.** Fotos: gotas na água, espreguiçadeiras vazias. Vídeo: gotas em câmera lenta, pan lento.
+- **Áreas internas.** Brinquedoteca, área kids (sem rosto), sauna, academia. Vídeo: tour de gimbal.
+- **Sabores e clima aconchegante.** Kaliz, Duben, prato quente, bar.
+- **Praia na chuva (só se for seguro).** Praia vazia, guarda-chuva na areia.
+- **Post que nasce deste kit:** carrossel "E se chover?" (legenda no painel). Pode entrar em qualquer dia opcional. **⚠ V-02, V-03, V-04, V-05**
+
 ---
 
 ## 4. Ideias que dependem de confirmação
@@ -257,6 +266,7 @@ MANHÃ: café → caminho e praia (cronometrar o tempo a pé) → piscina.
 SOL FORTE: quarto → piscina e bar → área kids/brinquedoteca → sauna e academia.
 GASTRONOMIA: Kaliz → Duben → bar → cozinha.
 PÔR DO SOL: piscina em luz baixa → fachada iluminada → bar → recepção.
+DIA DE CHUVA: janela com gotas → piscina na chuva → áreas internas → Kaliz e Duben → (praia, só se for seguro). Em trovoada, nada ao ar livre.
 
 POR CENA
 Fotos: ambiente vazio + detalhe + 1 plano com gente de costas.

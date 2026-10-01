@@ -67,6 +67,7 @@ details[open].kit,details[open].day{border-color:var(--accent)}
 summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:center;padding:16px}
 summary::-webkit-details-marker{display:none}
 .num{display:grid;place-items:center;width:52px;height:52px;border-radius:10px;background:var(--accent);color:var(--accent-fg);font-family:var(--display);font-weight:800;font-size:26px}
+.num.rain{background:var(--accent-soft);color:var(--fg);border:2px solid var(--accent)}
 .num.fixed{background:var(--sun-soft);color:var(--sun);border:2px solid var(--sun)}
 .sum-title{font-family:var(--display);font-weight:800;font-size:22px;line-height:1.2}
 .sum-sub{color:var(--muted);font-size:17px;margin-top:2px}
@@ -245,7 +246,19 @@ var KITS=[
   prep:"Ambientes no melhor estado. Se o hotel confirmar o Halloween, decoração com termo.",
   pessoas:"As que o hotel indicar, com termo.",
   blocks:[
-   {t:"Melhores ângulos do mês",m:120,f:["Repetir os melhores ângulos de café, praia, piscina e restaurantes"],v:["Melhores cenas dos kits anteriores"]}]}
+   {t:"Melhores ângulos do mês",m:120,f:["Repetir os melhores ângulos de café, praia, piscina e restaurantes"],v:["Melhores cenas dos kits anteriores"]}]},
+ {id:"VC",n:"C",rain:1,name:"Kit Dia de Chuva",luz:"Dia de chuva",hora:"",prev:"plano B de qualquer visita",feeds:[],
+  feedsNote:"Serve de plano B para qualquer post ao ar livre e alimenta o post sugerido abaixo, “E se chover?”.",
+  extra:"Se estiver chovendo no dia da visita, faça este kit no lugar do kit da vez. O kit que ficou para trás entra na visita seguinte. Em caso de trovoada, nada ao ar livre e proteja o equipamento.",
+  prep:"Luzes acesas, café ou bebida quente prontos, guarda-chuvas do hotel na entrada (se houver), áreas internas organizadas e piso seco.",
+  pessoas:"Colaboradores como modelos. Nenhum hóspede com rosto.",
+  post:{t:"Post sugerido: E se chover? (carrossel de 5)",pt:"Choveu em Búzios? O dia continua. Piscina climatizada, brinquedoteca, sauna, academia e restaurantes. [Horários e regras confirmados]\n\nVeja as datas no site oficial.",es:"¿Llovió en Búzios? El día continúa. Piscina climatizada, sala de juegos, sauna, gimnasio y restaurantes. [Horarios y reglas confirmados]\n\nConsultá fechas en nuestro sitio oficial.",hold:["V-02","V-03","V-04","V-05"]},
+  blocks:[
+   {t:"A chuva vista de dentro",m:0,f:["Janela com gotas","Café ou bebida quente na mesa, com a chuva ao fundo","Entrada com guarda-chuva"],v:["Close das gotas na janela (60 fps)","Plano aberto da piscina com chuva"]},
+   {t:"Piscina climatizada na chuva",m:0,f:["Gotas na água","Espreguiçadeiras vazias"],v:["Gotas na água em câmera lenta","Pan lento pela piscina"]},
+   {t:"Áreas internas",m:0,f:["Brinquedoteca","Área kids, sem rosto","Sauna","Academia"],v:["Tour de gimbal pelas áreas internas"]},
+   {t:"Sabores e clima aconchegante",m:0,f:["Ambiente do Kaliz","Ambiente do Duben","Prato quente","Bar"],v:["Close de prato e bebida","Pessoa de costas olhando a chuva"]},
+   {t:"Praia na chuva (só se for seguro)",m:0,f:["Praia vazia com chuva","Guarda-chuva na areia"],v:["Plano aberto do mar cinza"]}]}
 ];
 
 /* d: dia · f: formatos · fl: rótulo · e: essencial · o: objetivo · t: tema · h: gancho · k: kit · r: roteiro · pt/es: legenda · cp/ce: CTA · hold: códigos */
@@ -343,10 +356,15 @@ function kitHTML(k,i){
     return '<div class="block"><h3>'+esc(b.t)+'</h3><div class="cols"><div><div class="label">Fotos</div>'+li(b.f)+'</div><div><div class="label">Vídeos verticais</div>'+li(b.v)+'</div></div></div>';
   }).join("");
   var feeds=k.feeds.map(function(n){return '<button type="button" class="chip" data-day="'+n+'">Dia '+n+'</button>'}).join("");
-  return '<details class="kit" id="kit-'+k.id+'"'+(i===0?' open':'')+'><summary><span class="num'+(k.fixed?' fixed':'')+'">'+k.n+'</span><span><span class="sum-title">'+esc(k.name)+'</span>'+(k.fixed&&k.hora?'<span class="sum-sub" style="display:block">'+esc(k.hora)+'</span>':'')+'<span class="tags"><span class="tag '+(k.fixed?'sun':'accent')+'">'+esc(k.luz)+'</span><span class="tag'+(k.fixed?' sun':'')+'">'+esc(k.prev)+'</span></span></span></summary><div class="body">'+(k.extra?'<div class="note"><b>Atenção:</b> '+esc(k.extra)+'</div>':'')+'<div class="blocks">'+blocks+'</div><div class="cols"><div><div class="label">Pessoas e autorizações</div><p>'+esc(k.pessoas)+'</p></div><div><div class="label">O hotel deixa pronto</div><p>'+esc(k.prep)+'</p></div></div><div><div class="label">Este material vira os posts dos dias</div><div class="chips">'+feeds+'</div></div></div></details>';
+  return '<details class="kit" id="kit-'+k.id+'"'+(i===0?' open':'')+'><summary><span class="num'+(k.fixed?' fixed':(k.rain?' rain':''))+'">'+k.n+'</span><span><span class="sum-title">'+esc(k.name)+'</span>'+(k.fixed&&k.hora?'<span class="sum-sub" style="display:block">'+esc(k.hora)+'</span>':'')+'<span class="tags"><span class="tag '+(k.fixed?'sun':'accent')+'">'+esc(k.luz)+'</span><span class="tag'+(k.fixed?' sun':'')+'">'+esc(k.prev)+'</span></span></span></summary><div class="body">'+(k.extra?'<div class="note"><b>Atenção:</b> '+esc(k.extra)+'</div>':'')+'<div class="blocks">'+blocks+'</div><div class="cols"><div><div class="label">Pessoas e autorizações</div><p>'+esc(k.pessoas)+'</p></div><div><div class="label">O hotel deixa pronto</div><p>'+esc(k.prep)+'</p></div></div><div><div class="label">Este material vira os posts dos dias</div>'+(k.feeds.length?'<div class="chips">'+feeds+'</div>':'<p>'+esc(k.feedsNote||"")+'</p>')+'</div>'+postHTML(k)+'</div></details>';
 }
 $("#kits").innerHTML=KITS.map(kitHTML).join("");
 
+function postHTML(k){
+  if(!k.post)return "";
+  var h=k.post.hold?'<div class="hold"><b>Não poste ainda.</b> Confirmar com o hotel:<ul class="clean">'+k.post.hold.map(function(c){return "<li>"+esc(HOLD[c]||c)+" ("+c+")</li>"}).join("")+'</ul></div>':'';
+  return '<div class="field">'+h+'<div class="label">'+esc(k.post.t)+'</div><button type="button" class="copy" data-target="kp-pt-'+k.id+'" data-l="Copiar legenda em português">Copiar legenda em português</button><pre class="cap" id="kp-pt-'+k.id+'">'+esc(k.post.pt)+'</pre><button type="button" class="copy" data-target="kp-es-'+k.id+'" data-l="Copiar legenda em espanhol" style="margin-top:12px">Copiar legenda em espanhol</button><pre class="cap" id="kp-es-'+k.id+'">'+esc(k.post.es)+'</pre></div>';
+}
 /* posts */
 var filter="todos";
 var FILTERS=[["todos","Todos"],["essencial","Essenciais"],["reels","Reels"],["carrossel","Carrossel"],["foto","Foto"],["stories","Stories"]];
@@ -432,8 +450,9 @@ function fallbackCopy(pre,btn){
   setTimeout(function(){btn.textContent=btn.dataset.l},2400);
 }
 function doCopy(btn){
-  var det=btn.closest("details.day"),n=det.dataset.d,lang=btn.dataset.copy;
-  var pre=document.getElementById(lang+"-"+n);
+  var pre;
+  if(btn.dataset.target){pre=document.getElementById(btn.dataset.target)}
+  else{var det=btn.closest("details.day");pre=document.getElementById(btn.dataset.copy+"-"+det.dataset.d)}
   var text=pre.textContent;
   var done=function(){btn.textContent="Copiado";setTimeout(function(){btn.textContent=btn.dataset.l},2000)};
   if(navigator.clipboard&&navigator.clipboard.writeText){
@@ -444,7 +463,7 @@ function doCopy(btn){
 document.addEventListener("click",function(e){
   var t=e.target.closest("button");
   if(!t)return;
-  if(t.dataset.copy)return doCopy(t);
+  if(t.dataset.copy||t.dataset.target)return doCopy(t);
   if(t.dataset.f){filter=t.dataset.f;renderFilters();renderDays();return}
   if(t.dataset.day)return openDay(+t.dataset.day);
   if(t.dataset.kit)return openKit(t.dataset.kit);
