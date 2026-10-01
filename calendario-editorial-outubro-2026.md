@@ -1,6 +1,6 @@
 # Hotel Experience João Fernandes · Calendário editorial · Outubro de 2026
 
-**Versão 2.** Ajustada com as respostas do hotel: motor de reservas como destino, foco em dezembro e janeiro, Martim 2× por semana (cerca de 2 h por visita) editando e postando, programação real do Dia das Crianças (11 e 12/10), sem termo de imagem hoje e metas no TripAdvisor.
+**Versão 3.** Ajustada com as respostas do hotel: motor de reservas como destino, cupom de desconto como vantagem da reserva direta, foco em dezembro e janeiro, Martim 2× por semana com dias e horários livres (~2 h por visita) editando e postando, programação real do Dia das Crianças (11 e 12/10), sem termo de imagem hoje e meta de 5 estrelas no TripAdvisor.
 
 Nada aqui afirma preço, promoção, disponibilidade de quarto ou condição comercial. Itens marcados **⚠ V-xx** dependem de validação antes de publicar (seção 4).
 
@@ -15,7 +15,7 @@ Nada aqui afirma preço, promoção, disponibilidade de quarto ou condição com
 
 **Hipótese (a confirmar com os dados do hotel):** as férias escolares do Cone Sul vão de dezembro a fevereiro, e as brasileiras de dezembro a janeiro. Outubro é o mês de plantar a decisão de viagem de verão, principalmente do público argentino, uruguaio e chileno (mais de 50% do hotel).
 
-**Destino de toda conversão:** o link da bio e o link dos Stories levam ao **motor de reservas** (com parâmetro de origem/UTM, para saber quanto vem do Instagram; peça ao fornecedor do motor para confirmar o rastreio). O motor mostra a disponibilidade real, então o CTA é "veja as datas no site oficial", sem prometer nada. Dúvidas vão para DM e para o atendimento do hotel (24 h).
+**Destino de toda conversão:** o link da bio e o link dos Stories levam ao **motor de reservas** O motor mostra a disponibilidade real, então o CTA é "veja as datas no site oficial", sem prometer nada. O rastreio por UTM depende da resposta do Minibis (pendente). Enquanto isso, **meça pelo cupom**: recomendo um código exclusivo para o Instagram (decisão do hotel), que mostra quantas reservas vieram daqui sem depender de UTM. Dúvidas vão para DM, respondidas pela pessoa do hotel responsável.
 
 **Público**
 - Famílias com crianças: decidem por segurança, praticidade, "o que as crianças fazem" e distância da praia.
@@ -46,13 +46,13 @@ Nada aqui afirma preço, promoção, disponibilidade de quarto ou condição com
 1. **Post** (Reels ou carrossel) atrai quem não segue.
 2. **Stories** do mesmo dia com figurinha de link para o motor de reservas.
 3. **Perfil:** link da bio = motor de reservas.
-4. **DM e atendimento 24 h** para dúvidas, com respostas salvas em PT e ES.
+4. **DMs e comentários** respondidos pela pessoa do hotel responsável, com respostas salvas em PT e ES e as regras do cupom.
 5. **Reserva direta no motor.**
 6. **Pós-estadia:** pedido de avaliação no TripAdvisor (sem oferecer vantagem em troca; confirme a regra do TripAdvisor).
 
 **Recomendação estratégica (opinião, não fato):** vender janeiro só com post orgânico é lento. Recomendo **testar anúncios** dos melhores Reels, com link para o motor, para Argentina, Uruguai, Chile e Sudeste do Brasil, e remarketing se o motor aceitar o pixel da Meta. Verba e período são decisão do hotel. Sem isso, o calendário continua válido, só que mais lento.
 
-**Argumento da reserva direta:** se o hotel tiver uma vantagem real para quem reserva direto, ela precisa ser aprovada por vocês antes (V-15). Sem vantagem comercial, o argumento é: atendimento direto do hotel, 24 h, sem intermediário.
+**Argumento da reserva direta:** o hotel tem **cupom de desconto** que deixa o valor mais barato no site oficial do que em outros canais. É o melhor CTA de conversão. Regras: (a) divulgar só o texto exato aprovado pelo hotel; (b) nunca citar percentual, valor ou "melhor preço" sem aprovação; (c) informar código, validade, datas em que vale e se vale para dezembro e janeiro (V-15). Use o CTA com cupom em poucos posts (19, 23 e 31) e nos Stories, para não virar propaganda o tempo todo.
 
 **Cuidados do mês**
 - **Eleições** (04/10 e 25/10): sem política. Conteúdo leve.
@@ -102,11 +102,11 @@ Códigos de cena (coluna "Martim"): **V1 a V9** = visita (seção 3). "Arquivo" 
 
 | Data | Obj. | Tema e ideia central | Formato | Gancho | Martim | Preparar | Legenda / roteiro | CTA | Idioma | Indicador |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Seg 19/10 ★ | C | **Como reservar no site oficial, passo a passo.** Gravação de tela do motor. **⚠ V-14, V-15** | Carrossel 5 | "Como ver as datas de janeiro no nosso site." | — (gravação de tela) | Gravar tela do motor; sem preço | Escolher datas · adultos e crianças · ver quartos · confirmar.<br>ES: versão completa | "Faça sua reserva direto no site oficial (link na bio)." | Bilíngue | Cliques no link |
+| Seg 19/10 ★ | C | **Como reservar no site oficial, passo a passo.** Gravação de tela do motor. **⚠ V-14, V-15** | Carrossel 5 | "Como ver as datas de janeiro no nosso site." | — (gravação de tela) | Gravar tela do motor; sem preço | Escolher datas · adultos e crianças · ver quartos · confirmar.<br>ES: versão completa | "Faça sua reserva no site oficial e use o cupom [CÓDIGO] (link na bio)." | Bilíngue | Cliques no link |
 | Ter 20/10 ★ | A | **Kaliz ou Duben?** **⚠ V-05** | Reels 20 s | "Dois restaurantes, um hotel." | V5 | Pratos do chefe | Ambiente → prato → ambiente → prato.<br>Legenda: "Qual você escolhe?"<br>ES: "¿Cuál elegís?" | "Comente K ou D." | Bilíngue | Comentários |
 | Qua 21/10 | C | **A dois: três momentos.** **⚠ V-04, V-05, V-06** | Carrossel 5 | "Para escapar a dois." | V5 + arquivo | Modelos | Café sem pressa · sauna · fim de tarde · jantar. Só o confirmado.<br>ES: versão completa | "Veja as datas no site oficial." | Bilíngue | Cliques no link |
 | Qui 22/10 | R | **Bastidores da cozinha.** **⚠ V-05** | Reels 20 s | "Ninguém vê isso quando o prato chega." | V5 | Cozinheiro com termo | Preparo → empratamento → saída.<br>ES: "Antes de llegar a la mesa." | "Qual prato você quer ver?" | Bilíngue | Comentários |
-| Sex 23/10 ★ | C | **Verão em Búzios: dezembro e janeiro no hotel.** Piscina, café, praia a ~100 m, área kids. | Carrossel 6 | "Dezembro e janeiro: o que o hotel oferece." | Arquivo + V5 | Só serviços confirmados | Cada slide é um serviço.<br>ES: "Verano en Búzios: diciembre y enero."<br>Sem prometer disponibilidade. | "Veja as datas de dezembro e janeiro no site oficial." | Bilíngue | Cliques no link |
+| Sex 23/10 ★ | C | **Verão em Búzios: dezembro e janeiro no hotel. ⚠ V-15** Piscina, café, praia a ~100 m, área kids. | Carrossel 6 | "Dezembro e janeiro: o que o hotel oferece." | Arquivo + V5 | Só serviços confirmados | Cada slide é um serviço.<br>ES: "Verano en Búzios: diciembre y enero."<br>Sem prometer disponibilidade. | "Veja as datas de dezembro e janeiro no site oficial e use o cupom [CÓDIGO]." | Bilíngue | Cliques no link |
 | Sáb 24/10 ★ | A | **Fim de tarde na piscina.** | Reels 15 s | "A melhor hora do hotel é esta." | V6 | Iluminação acesa | "A luz baixa na piscina climatizada."<br>ES: "La luz baja en la piscina." | "Salve para lembrar." | Bilíngue | Salvamentos |
 | Dom 25/10 | R | **Respondendo suas perguntas.** Stories com a caixinha do dia 02. | Stories | "Vocês perguntaram. A gente respondeu." | V1 a V6 | Respostas validadas | Um Story por pergunta. Sem política (2º turno). | "Pergunte no direct." | Bilíngue | Respostas |
 
@@ -119,13 +119,15 @@ Códigos de cena (coluna "Martim"): **V1 a V9** = visita (seção 3). "Arquivo" 
 | Qua 28/10 ★ | C | **Verano en Búzios: ¿planificás enero?** Espanhol primeiro. **⚠ V-09, V-17** | Carrossel 5 | "Verano en Búzios: lo que tenés que saber." | V8 | Info de acesso validada | Acesso · praia a ~100 m · café incluso · área kids.<br>PT na legenda. | "Consultá las fechas en nuestro sitio oficial." | Espanhol com legenda PT | Cliques no link, DMs em ES |
 | Qui 29/10 | R | **Quem cuida da sua estadia.** **⚠ V-11** | Foto | "Esta é a pessoa que prepara sua manhã." | V8 | Termo da equipe | "[Nome], [função]. Qual é a sua parte favorita do café?"<br>ES: "[Nombre], [función]." | "Deixe um oi." | Bilíngue | Comentários |
 | Sex 30/10 | A | **Sexta começa assim.** | Reels 15 s | "A sexta tem cheiro de café." | V8 | Mesa completa | "Bom dia, fim de semana."<br>ES: "Buen día, fin de semana." | "Envie para quem vem com você." | Bilíngue | Compartilhamentos |
-| Sáb 31/10 ★ | R | **Outubro em 30 segundos.** Retrospectiva real. Halloween só se confirmado. **⚠ V-12** | Reels 30 s | "Este foi o nosso outubro." | V9 + melhores momentos | 8 melhores clipes | "Obrigado por acompanhar."<br>ES: "Gracias por acompañarnos." | "Planeje suas férias de verão: veja as datas no site oficial." | Bilíngue | Seguidores novos, cliques |
+| Sáb 31/10 ★ | R | **Outubro em 30 segundos.** Retrospectiva real. Halloween só se confirmado. **⚠ V-12** | Reels 30 s | "Este foi o nosso outubro." | V9 + melhores momentos | 8 melhores clipes | "Obrigado por acompanhar."<br>ES: "Gracias por acompañarnos." | "Planeje suas férias de verão: veja as datas no site oficial e use o cupom [CÓDIGO]." | Bilíngue | Seguidores novos, cliques |
 
 ---
 
 ## 3. Plano de captação (9 visitas de ~2 h)
 
-**Premissa:** Martim vai 2× por semana por ~2 h. Os dias exatos não estão definidos. O plano usa **sextas e terças como dias-base**, com **domingo 11 e segunda 12/10** fixos (programação do hotel). Se os dias mudarem, mantenha a regra: **cada post usa material da visita anterior ou do arquivo**.
+**Premissa:** Martim vai 2× por semana por ~2 h, **sem dia nem horário fixos** (ele escolhe pelo sol e pelo clima). Só **domingo 11 e segunda 12/10** são fixos. Por isso o plano é uma **fila de kits**: a cada visita ele faz o próximo kit da fila, no horário que a luz pedir. As datas de V1 a V9 são só previsão.
+
+**Regra:** cada post usa o material do kit já feito. Se o kit atrasou, o post sai do arquivo e o kit entra na visita seguinte. Na segunda, o Martim avisa os 2 dias da semana e qual kit fará.
 
 **Regras do Martim**
 - Vídeos 9:16, 4K, 30 fps (60 fps para água e câmera lenta). Fotos verticais e horizontais.
@@ -133,14 +135,14 @@ Códigos de cena (coluna "Martim"): **V1 a V9** = visita (seção 3). "Arquivo" 
 - **Sem rosto de hóspede.** Costas, mãos, pés, silhueta e detalhes. Rosto só de colaboradores com termo e de hóspedes com termo assinado.
 - Ele edita e posta: a legenda vem pronta (calendário), o Martim envia o vídeo para aprovação no WhatsApp antes de postar.
 
-**Escolha do horário**
+**Kit por tipo de luz (Martim decide pelo clima; se for pôr do sol, faz o Kit Pôr do Sol)**
 - **Manhã (8h às 10h):** café, caminho e praia, piscina vazia.
 - **Almoço (11h às 13h):** piscina com movimento, restaurantes, áreas kids.
 - **Fim de tarde (16h30 às 18h30):** piscina em luz baixa, bar, fachada.
 
 ---
 
-### V1 · Sex 02/10 · MANHÃ (8h às 10h)
+### V1 · 1ª visita (previsão 02/10) · KIT MANHÃ (8h às 10h)
 **Abastece:** 03, 04, 05, 06 e 07/10
 - **0:00–0:35 Café.** Fotos: salão, mesa em detalhe (6 itens), mão servindo, mesa posta. Vídeo: push-in na mesa, tilt do prato ao rosto de um colaborador, POV entrando no salão.
 - **0:35–1:20 Caminho e praia.** Fotos: fachada, caminho em 5 pontos, chegada, casal de costas (colaboradores). Vídeo: gimbal contínuo do hotel ao mar. **Cronometrar o tempo a pé.**
@@ -148,7 +150,7 @@ Códigos de cena (coluna "Martim"): **V1 a V9** = visita (seção 3). "Arquivo" 
 - **Pessoas e autorizações:** 2 colaboradores como modelos, com termo.
 - **Equipe prepara:** café reposto, piscina limpa, toalhas dobradas, 2 colaboradores liberados, cronômetro.
 
-### V2 · Ter 06/10 · ALMOÇO (11h às 13h)
+### V2 · 2ª visita (previsão 06/10) · KIT SOL FORTE (11h às 13h)
 **Abastece:** 08, 09, 14 e 18/10
 - **0:00–0:25 Quarto.** Fotos: cama, banheiro, varanda. Vídeo: tour (porta → cama → banheiro → vista).
 - **0:25–1:05 Piscina e bar.** Fotos: piscina com movimento sem rosto, bar. Vídeo: pan lateral, drink.
@@ -157,7 +159,7 @@ Códigos de cena (coluna "Martim"): **V1 a V9** = visita (seção 3). "Arquivo" 
 - **Pessoas e autorizações:** monitor e 1 colaborador.
 - **Equipe prepara:** quarto vago e arrumado (V-18), brinquedoteca organizada, sauna limpa.
 
-### V3 · Dom 11/10 · CAFÉ ESPECIAL (~7h30 às 9h30, confirmar)
+### V3 · Dom 11/10 (data fixa) · CAFÉ ESPECIAL (8h às 10h, previsto)
 **Abastece:** 11, 12, 14 e 15/10
 - **0:00–0:30 Montagem.** Fotos: mesa especial, decoração, itens. Vídeo: time-lapse da montagem (15 s).
 - **0:30–1:30 Café com hóspedes.** Fotos: detalhes, mãos de crianças, costas, mesa cheia. Vídeo: plano geral do salão sem rostos nítidos. Rosto só de quem assinar o termo.
@@ -165,14 +167,14 @@ Códigos de cena (coluna "Martim"): **V1 a V9** = visita (seção 3). "Arquivo" 
 - **Pessoas e autorizações:** termo por QR na mesa (seção 5.4).
 - **Equipe prepara:** decoração, programação confirmada (V-07), QR do termo impresso na mesa.
 
-### V4 · Seg 12/10 · FESTA DOS FILHOS DE FUNCIONÁRIOS (horário a definir, ~2 h)
+### V4 · Seg 12/10 (data fixa) · FESTA DOS FILHOS DE FUNCIONÁRIOS (horário a definir, ~2 h)
 **Abastece:** 12 (Stories) e 13/10
 - **Fotos:** grupo, brincadeiras, retratos, detalhes da festa.
 - **Vídeos:** 3 momentos (início, meio, fim); câmera na altura da criança.
 - **Pessoas e autorizações:** **termo escrito do funcionário responsável**. Sem termo, a criança fica fora.
 - **Equipe prepara:** lista de crianças autorizadas e aprovação da direção (V-16).
 
-### V5 · Sex 16/10 · GASTRONOMIA (12h às 14h)
+### V5 · 5ª visita (previsão 16/10) · KIT GASTRONOMIA (12h às 14h)
 **Abastece:** 20, 21, 22 e 23/10
 - **0:00–0:35 Kaliz.** Fotos: ambiente, 3 pratos, sobremesa. Vídeo: empratamento (60 fps).
 - **0:35–1:10 Duben.** O mesmo.
@@ -181,7 +183,7 @@ Códigos de cena (coluna "Martim"): **V1 a V9** = visita (seção 3). "Arquivo" 
 - **Pessoas e autorizações:** chefe ou cozinheiro (termo).
 - **Equipe prepara:** pratos escolhidos, horários confirmados (V-05).
 
-### V6 · Ter 20/10 · FIM DE TARDE (16h30 às 18h30)
+### V6 · 6ª visita (previsão 20/10) · KIT PÔR DO SOL (16h30 às 18h30)
 **Abastece:** 24 e 25/10
 - **0:00–0:40 Piscina em luz baixa.** Fotos e vídeo.
 - **0:40–1:10 Fachada iluminada.** Time-lapse.
@@ -189,7 +191,7 @@ Códigos de cena (coluna "Martim"): **V1 a V9** = visita (seção 3). "Arquivo" 
 - **1:40–2:00 Recepção.**
 - **Equipe prepara:** iluminação acesa.
 
-### V7 · Sex 23/10 · HUMOR E FAMÍLIAS (10h às 12h)
+### V7 · 7ª visita (previsão 23/10) · KIT HUMOR E FAMÍLIAS (sol forte, 10h às 12h)
 **Abastece:** 26, 27 e 28/10
 - **0:00–0:40 Esquetes (4 × 10 min).** Os 4 tipos de hóspede com colaboradores.
 - **0:40–1:20 Piscina com famílias.** Sem rosto.
@@ -197,14 +199,14 @@ Códigos de cena (coluna "Martim"): **V1 a V9** = visita (seção 3). "Arquivo" 
 - **Pessoas e autorizações:** 4 colaboradores com termo.
 - **Equipe prepara:** toalha, chapéu, boia, livro, copo.
 
-### V8 · Ter 27/10 · EQUIPE E CHEGADA (8h às 10h)
+### V8 · 8ª visita (previsão 27/10) · KIT EQUIPE E CHEGADA (manhã)
 **Abastece:** 28, 29 e 30/10
 - **0:00–0:40 Retratos da equipe** (8 pessoas).
 - **0:40–1:20 Recepção e chegada** com mala (colaboradores como modelos).
 - **1:20–2:00 Café.**
 - **Equipe prepara:** uniformes, recepção organizada.
 
-### V9 · Sex 30/10 · RETROSPECTIVA (8h às 10h)
+### V9 · 9ª visita (previsão 30/10) · KIT RETROSPECTIVA (manhã)
 **Abastece:** 31/10 e início de novembro
 - Repetir os melhores ângulos do mês. Se o hotel confirmar o Halloween (V-12), incluir decoração com termo.
 
@@ -220,15 +222,15 @@ Códigos de cena (coluna "Martim"): **V1 a V9** = visita (seção 3). "Arquivo" 
 | V-04 | Piscina, sauna e academia: horário e restrições | 04, 18, 21 | 02/10 |
 | V-05 | Kaliz e Duben: horário, dias, reservas | 20, 21, 22 | 14/10 |
 | V-06 | Bar da piscina: horário e itens | 21 | 16/10 |
-| V-07 | Café do dia 11/10: horário, o que terá, se é para hóspedes com criança | 10, 11, 12 | 07/10 |
+| V-07 | Café do dia 11/10 (temático, ~8h às 10h, para todos os hóspedes): confirmar horário final e o que terá | 10, 11, 12 | 07/10 |
 | V-08 | Tempo real a pé até a praia | 03, 05 | 02/10 |
 | V-09 | Acesso, transfer, estacionamento | 26, 28 | 20/10 |
 | V-10 | Política para crianças, berço, check-in e check-out | 14, 26 | 07/10 |
 | V-11 | Termo de imagem (seção 5.4) revisado pelo jurídico | todos com rosto | **antes de 02/10** |
 | V-12 | Halloween: o hotel fará algo? | 31 | 20/10 |
 | V-13 | Regras do TripAdvisor para reproduzir avaliações | 16 | 12/10 |
-| V-14 | Link do motor de reservas e rastreio de origem (UTM) | 05, 19 e todos com CTA | **antes de 02/10** |
-| V-15 | Vantagem real para reserva direta, se existir | 19 | 15/10 |
+| V-14 | Link do motor (Minibis): UTM, pixel Meta, relatório por origem. **Pendente.** Enquanto isso, usar o link atual e medir pelo cupom | 05, 19 e todos com CTA | quando o Minibis responder |
+| V-15 | Cupom: código, validade, datas em que vale (dez/jan?), texto aprovado, se pode citar "mais barato" | 19, 23, 31 | 15/10 |
 | V-16 | Direção aprova divulgar a festa dos filhos de funcionários; termos assinados | 12, 13 | 10/10 |
 | V-17 | Revisão do espanhol por falante nativo | bilíngues | contínuo |
 | V-18 | Qual quarto mostrar | 08 | 02/10 |
@@ -262,7 +264,7 @@ DIAS ESPECIAIS
 • Dom 11/10, café especial dos hóspedes: montagem, detalhes, mesa cheia (sem rostos), enviar 5 fotos até 11h.
 • Seg 12/10, festa dos filhos de funcionários: só crianças com termo.
 
-PERGUNTA: quais são os 2 dias fixos da semana para as visitas?
+TODA SEGUNDA: me avisa os 2 dias da semana e qual kit vai fazer. Se o dia estiver com pôr do sol bonito, faz o kit Pôr do Sol.
 ```
 
 ### 5.2 Checklist curto para a equipe do hotel
@@ -277,18 +279,19 @@ PERGUNTA: quais são os 2 dias fixos da semana para as visitas?
 - [ ] Um quarto vago e arrumado (V2).
 - [ ] Iluminação acesa no fim de tarde (V6).
 - [ ] Alguém para acompanhar o Martim e indicar quem pode aparecer.
+- [ ] Pessoa responsável pelas DMs com respostas prontas (PT e ES), regras do cupom e link do motor.
 
 ### 5.3 Rotina semanal simples
 
 | Dia | O que fazer | Tempo |
 |---|---|---|
-| Segunda | Conferir indicadores da semana anterior; confirmar os ★ da semana e as visitas do Martim | 40 min |
+| Segunda | Conferir indicadores da semana anterior; confirmar os ★ da semana; Martim avisa os 2 dias da semana e o kit | 40 min |
 | Dias de visita | Stories ao vivo; checklist da equipe; Martim envia o material no mesmo dia | 20 min |
 | Dia seguinte à visita | Martim edita; aprovação por WhatsApp em até 2 h; Martim posta | 1 h 30 |
 | Todos os dias | Postar o conteúdo do dia; 3 a 5 Stories; responder comentários e DMs **2 vezes ao dia** (manhã e fim de tarde), com respostas salvas em PT e ES | 20 min |
 | Sexta | Atualizar planilha: seguidores novos, % dos países-alvo, alcance de não seguidores, salvamentos, compartilhamentos, cliques no link (motor), conversas iniciadas, reservas diretas (o hotel informa) | 20 min |
 
-**Rastreamento:** link da bio e link dos Stories com UTM, para o motor mostrar quantas reservas vêm do Instagram.
+**Rastreamento:** (1) cupom exclusivo do Instagram, que funciona já; (2) UTM no link, quando o Minibis confirmar.
 
 ### 5.4 Termo de imagem e TripAdvisor
 
@@ -327,10 +330,23 @@ Para **consultas e reservas diretas**, o hotel já tem os números:
 
 ---
 
-## 7. Perguntas que restam
+## 7. Pendências
 
-1. Martim pode fixar **2 dias da semana** (de preferência um no início da semana e um na quinta ou sexta) e o horário de cada visita?
-2. **Quem responde as DMs e os comentários do Instagram**: a recepção, a reserva, ou você/ByCida?
-3. O hotel tem **alguma vantagem real para reserva direta**, que possa ser divulgada?
-4. O café especial de 11/10 é **temático de Dia das Crianças**? Qual horário? É para todos os hóspedes ou só para famílias?
-5. Qual é o **link do motor de reservas** e ele aceita parâmetros de origem (UTM) e pixel da Meta?
+**Pode seguir sem a resposta do Minibis.** Até ela chegar: use o link atual do motor e meça pelo cupom do Instagram e pelas conversas.
+
+**Mensagem para o Minibis (copiar e enviar)**
+
+```
+Oi! Estamos organizando as divulgações do hotel no Instagram para vender dezembro e janeiro. Precisamos saber:
+1) O link do motor aceita parâmetros de origem (UTM, ex.: utm_source=instagram)? Como montar?
+2) O motor aceita instalar o pixel da Meta (Facebook/Instagram) para anúncios e remarketing?
+3) Dá para ver um relatório de reservas por origem (ou por cupom)?
+4) Dá para criar um cupom exclusivo para o Instagram, para medirmos as reservas dessa origem?
+5) O motor está em português e espanhol?
+Obrigada!
+```
+
+**Do hotel, ainda preciso de:**
+1. Cupom: código, validade, datas em que vale (dezembro e janeiro?), texto aprovado e se pode citar "mais barato" (V-15).
+2. Confirmação final do horário do café de 11/10 (V-07).
+3. Se a pessoa que responde as DMs tem treinamento nas respostas em espanhol e nas regras do cupom.
