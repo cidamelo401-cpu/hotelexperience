@@ -15,6 +15,8 @@ Nada aqui afirma preço, promoção, disponibilidade de quarto ou condição com
 
 **Hipótese (a confirmar com os dados do hotel):** as férias escolares do Cone Sul vão de dezembro a fevereiro, e as brasileiras de dezembro a janeiro. Outubro é o mês de plantar a decisão de viagem de verão, principalmente do público argentino, uruguaio e chileno (mais de 50% do hotel).
 
+**Link do motor (Omnibees):** https://book.omnibees.com/hotel/2093
+
 **Destino de toda conversão:** o link da bio e o link dos Stories levam ao **motor de reservas** O motor mostra a disponibilidade real, então o CTA é "veja as datas no site oficial", sem prometer nada. O rastreio por UTM depende da resposta do Minibis (pendente). Enquanto isso, **meça pelo cupom**: recomendo um código exclusivo para o Instagram (decisão do hotel), que mostra quantas reservas vieram daqui sem depender de UTM. Dúvidas vão para DM, respondidas pela pessoa do hotel responsável.
 
 **Público**
@@ -229,7 +231,7 @@ Códigos de cena (coluna "Martim"): **V1 a V9** = visita (seção 3). "Arquivo" 
 | V-11 | Termo de imagem (seção 5.4) revisado pelo jurídico | todos com rosto | **antes de 02/10** |
 | V-12 | Halloween: o hotel fará algo? | 31 | 20/10 |
 | V-13 | Regras do TripAdvisor para reproduzir avaliações | 16 | 12/10 |
-| V-14 | Link do motor (Minibis): UTM, pixel Meta, relatório por origem. **Pendente.** Enquanto isso, usar o link atual e medir pelo cupom | 05, 19 e todos com CTA | quando o Minibis responder |
+| V-14 | Link do motor (Minibis): UTM, pixel Meta, relatório por origem. **Pendente.** Enquanto isso, usar https://book.omnibees.com/hotel/2093 e medir pelo cupom | 05, 19 e todos com CTA | quando o Minibis responder |
 | V-15 | Cupom: código, validade, datas em que vale (dez/jan?), texto aprovado, se pode citar "mais barato" | 19, 23, 31 | 15/10 |
 | V-16 | Direção aprova divulgar a festa dos filhos de funcionários; termos assinados | 12, 13 | 10/10 |
 | V-17 | Revisão do espanhol por falante nativo | bilíngues | contínuo |
