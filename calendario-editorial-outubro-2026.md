@@ -34,7 +34,7 @@ Nada aqui afirma preço, promoção, disponibilidade de quarto ou condição com
 7. **Verão no hotel:** conteúdo para dezembro e janeiro, sempre com o link do motor.
 8. **Prova social real:** avaliações do TripAdvisor (seção 5.4).
 
-**Frequência realista:** Martim vai 2× por semana, ~2 h por visita, e ele mesmo edita e posta. Isso rende cerca de **2 Reels e 2 carrosséis ou fotos por semana** com material novo. Por isso:
+**Frequência realista:** Martim vai 2× por semana e ele mesmo edita e posta. Isso rende cerca de **2 Reels e 2 carrosséis ou fotos por semana** com material novo. Por isso:
 - Feed: **4 posts ★ por semana**. Os demais dias são opcionais (foto do banco de imagens) ou Stories.
 - Stories: de 3 a 5 por dia, com a rotina da seção 5.3.
 - Só 1 em cada 3 posts leva CTA de reserva.
@@ -125,9 +125,9 @@ Códigos de cena (coluna "Martim"): **V1 a V9** = visita (seção 3). "Arquivo" 
 
 ---
 
-## 3. Plano de captação (9 visitas de ~2 h)
+## 3. Plano de captação (9 visitas)
 
-**Premissa:** Martim vai 2× por semana por ~2 h, **sem dia nem horário fixos** (ele escolhe pelo sol e pelo clima). Só **domingo 11 e segunda 12/10** são fixos. Por isso o plano é uma **fila de kits**: a cada visita ele faz o próximo kit da fila, no horário que a luz pedir. As datas de V1 a V9 são só previsão.
+**Premissa:** Martim vai 2× por semana, **sem dia nem horário fixos** (ele escolhe pelo sol e pelo clima). Só **domingo 11 e segunda 12/10** são fixos. Por isso o plano é uma **fila de kits**: a cada visita ele faz o próximo kit da fila, no horário que a luz pedir. As datas de V1 a V9 são só previsão.
 
 **Regra:** cada post usa o material do kit já feito. Se o kit atrasou, o post sai do arquivo e o kit entra na visita seguinte. Na segunda, o Martim avisa os 2 dias da semana e qual kit fará.
 
@@ -138,74 +138,74 @@ Códigos de cena (coluna "Martim"): **V1 a V9** = visita (seção 3). "Arquivo" 
 - Ele edita e posta: a legenda vem pronta (calendário), o Martim envia o vídeo para aprovação no WhatsApp antes de postar.
 
 **Kit por tipo de luz (Martim decide pelo clima; se for pôr do sol, faz o Kit Pôr do Sol)**
-- **Manhã (8h às 10h):** café, caminho e praia, piscina vazia.
-- **Almoço (11h às 13h):** piscina com movimento, restaurantes, áreas kids.
-- **Fim de tarde (16h30 às 18h30):** piscina em luz baixa, bar, fachada.
+- **Manhã:** café, caminho e praia, piscina vazia.
+- **Sol forte:** piscina com movimento, restaurantes, áreas kids.
+- **Pôr do sol:** piscina em luz baixa, bar, fachada.
 
 ---
 
-### V1 · 1ª visita (previsão 02/10) · KIT MANHÃ (8h às 10h)
+### V1 · 1ª visita (previsão 02/10) · KIT MANHÃ
 **Abastece:** 03, 04, 05, 06 e 07/10
-- **0:00–0:35 Café.** Fotos: salão, mesa em detalhe (6 itens), mão servindo, mesa posta. Vídeo: push-in na mesa, tilt do prato ao rosto de um colaborador, POV entrando no salão.
-- **0:35–1:20 Caminho e praia.** Fotos: fachada, caminho em 5 pontos, chegada, casal de costas (colaboradores). Vídeo: gimbal contínuo do hotel ao mar. **Cronometrar o tempo a pé.**
-- **1:20–2:00 Piscina.** Fotos: piscina vazia, espreguiçadeiras, toalhas. Vídeo: água em câmera lenta (60 fps), copo e gelo.
+- **Café.** Fotos: salão, mesa em detalhe (6 itens), mão servindo, mesa posta. Vídeo: push-in na mesa, tilt do prato ao rosto de um colaborador, POV entrando no salão.
+- **Caminho e praia.** Fotos: fachada, caminho em 5 pontos, chegada, casal de costas (colaboradores). Vídeo: gimbal contínuo do hotel ao mar. **Cronometrar o tempo a pé.**
+- **Piscina.** Fotos: piscina vazia, espreguiçadeiras, toalhas. Vídeo: água em câmera lenta (60 fps), copo e gelo.
 - **Pessoas e autorizações:** 2 colaboradores como modelos, com termo.
 - **Equipe prepara:** café reposto, piscina limpa, toalhas dobradas, 2 colaboradores liberados, cronômetro.
 
-### V2 · 2ª visita (previsão 06/10) · KIT SOL FORTE (11h às 13h)
+### V2 · 2ª visita (previsão 06/10) · KIT SOL FORTE
 **Abastece:** 08, 09, 14 e 18/10
-- **0:00–0:25 Quarto.** Fotos: cama, banheiro, varanda. Vídeo: tour (porta → cama → banheiro → vista).
-- **0:25–1:05 Piscina e bar.** Fotos: piscina com movimento sem rosto, bar. Vídeo: pan lateral, drink.
-- **1:05–1:35 Área kids e brinquedoteca.** Fotos: ambientes e brinquedos, monitor presente. Vídeo: tour de gimbal.
-- **1:35–2:00 Sauna e academia.** Fotos de cada uma.
+- **Quarto.** Fotos: cama, banheiro, varanda. Vídeo: tour (porta → cama → banheiro → vista).
+- **Piscina e bar.** Fotos: piscina com movimento sem rosto, bar. Vídeo: pan lateral, drink.
+- **Área kids e brinquedoteca.** Fotos: ambientes e brinquedos, monitor presente. Vídeo: tour de gimbal.
+- **Sauna e academia.** Fotos de cada uma.
 - **Pessoas e autorizações:** monitor e 1 colaborador.
 - **Equipe prepara:** quarto vago e arrumado (V-18), brinquedoteca organizada, sauna limpa.
 
 ### V3 · Dom 11/10 (data fixa) · CAFÉ ESPECIAL (8h às 10h, previsto)
 **Abastece:** 11, 12, 14 e 15/10
-- **0:00–0:30 Montagem.** Fotos: mesa especial, decoração, itens. Vídeo: time-lapse da montagem (15 s).
-- **0:30–1:30 Café com hóspedes.** Fotos: detalhes, mãos de crianças, costas, mesa cheia. Vídeo: plano geral do salão sem rostos nítidos. Rosto só de quem assinar o termo.
-- **1:30–2:00 Piscina e área kids.** Fotos sem rosto.
+- **Montagem.** Fotos: mesa especial, decoração, itens. Vídeo: time-lapse da montagem (15 s).
+- **Café com hóspedes.** Fotos: detalhes, mãos de crianças, costas, mesa cheia. Vídeo: plano geral do salão sem rostos nítidos. Rosto só de quem assinar o termo.
+- **Piscina e área kids.** Fotos sem rosto.
 - **Pessoas e autorizações:** termo por QR na mesa (seção 5.4).
 - **Equipe prepara:** decoração, programação confirmada (V-07), QR do termo impresso na mesa.
 
-### V4 · Seg 12/10 (data fixa) · FESTA DOS FILHOS DE FUNCIONÁRIOS (horário a definir, ~2 h)
+### V4 · Seg 12/10 (data fixa) · FESTA DOS FILHOS DE FUNCIONÁRIOS (horário a definir)
 **Abastece:** 12 (Stories) e 13/10
 - **Fotos:** grupo, brincadeiras, retratos, detalhes da festa.
 - **Vídeos:** 3 momentos (início, meio, fim); câmera na altura da criança.
 - **Pessoas e autorizações:** **termo escrito do funcionário responsável**. Sem termo, a criança fica fora.
 - **Equipe prepara:** lista de crianças autorizadas e aprovação da direção (V-16).
 
-### V5 · 5ª visita (previsão 16/10) · KIT GASTRONOMIA (12h às 14h)
+### V5 · 5ª visita (previsão 16/10) · KIT GASTRONOMIA
 **Abastece:** 20, 21, 22 e 23/10
-- **0:00–0:35 Kaliz.** Fotos: ambiente, 3 pratos, sobremesa. Vídeo: empratamento (60 fps).
-- **0:35–1:10 Duben.** O mesmo.
-- **1:10–1:30 Bar.** Fotos e vídeo de drink.
-- **1:30–2:00 Cozinha.** Preparo de 2 pratos.
+- **Kaliz.** Fotos: ambiente, 3 pratos, sobremesa. Vídeo: empratamento (60 fps).
+- **Duben.** O mesmo.
+- **Bar.** Fotos e vídeo de drink.
+- **Cozinha.** Preparo de 2 pratos.
 - **Pessoas e autorizações:** chefe ou cozinheiro (termo).
 - **Equipe prepara:** pratos escolhidos, horários confirmados (V-05).
 
-### V6 · 6ª visita (previsão 20/10) · KIT PÔR DO SOL (16h30 às 18h30)
+### V6 · 6ª visita (previsão 20/10) · KIT PÔR DO SOL
 **Abastece:** 24 e 25/10
-- **0:00–0:40 Piscina em luz baixa.** Fotos e vídeo.
-- **0:40–1:10 Fachada iluminada.** Time-lapse.
-- **1:10–1:40 Bar.** Drink.
-- **1:40–2:00 Recepção.**
+- **Piscina em luz baixa.** Fotos e vídeo.
+- **Fachada iluminada.** Time-lapse.
+- **Bar.** Drink.
+- **Recepção.**
 - **Equipe prepara:** iluminação acesa.
 
 ### V7 · 7ª visita (previsão 23/10) · KIT HUMOR E FAMÍLIAS (sol forte, 10h às 12h)
 **Abastece:** 26, 27 e 28/10
-- **0:00–0:40 Esquetes (4 × 10 min).** Os 4 tipos de hóspede com colaboradores.
-- **0:40–1:20 Piscina com famílias.** Sem rosto.
-- **1:20–2:00 Brinquedoteca e café.**
+- **Esquetes (4 de 5 s).** Os 4 tipos de hóspede com colaboradores.
+- **Piscina com famílias.** Sem rosto.
+- **Brinquedoteca e café.**
 - **Pessoas e autorizações:** 4 colaboradores com termo.
 - **Equipe prepara:** toalha, chapéu, boia, livro, copo.
 
 ### V8 · 8ª visita (previsão 27/10) · KIT EQUIPE E CHEGADA (manhã)
 **Abastece:** 28, 29 e 30/10
-- **0:00–0:40 Retratos da equipe** (8 pessoas).
-- **0:40–1:20 Recepção e chegada** com mala (colaboradores como modelos).
-- **1:20–2:00 Café.**
+- **Retratos da equipe** (8 pessoas).
+- **Recepção e chegada** com mala (colaboradores como modelos).
+- **Café.**
 - **Equipe prepara:** uniformes, recepção organizada.
 
 ### V9 · 9ª visita (previsão 30/10) · KIT RETROSPECTIVA (manhã)
@@ -244,7 +244,7 @@ Códigos de cena (coluna "Martim"): **V1 a V9** = visita (seção 3). "Arquivo" 
 ### 5.1 Mensagem para o Martim (WhatsApp)
 
 ```
-Oi, Martim! Segue o roteiro de outubro. Cada visita é de ~2 horas e tem um foco.
+Oi, Martim! Segue o roteiro de outubro. Cada visita tem um foco.
 
 REGRAS
 • Vídeos 9:16, 4K, 30 fps (60 fps para água/câmera lenta). Fotos vertical e horizontal.
@@ -252,11 +252,11 @@ REGRAS
 • Criança: só com termo do responsável.
 • Você edita e posta: manda o vídeo pronto aqui para eu aprovar antes de publicar. A legenda eu envio.
 
-ROTEIRO DE 2 HORAS (escolher o foco do dia)
-MANHÃ (8h–10h): café (35 min) → caminho e praia (45 min, cronometrar) → piscina (40 min).
-ALMOÇO (11h–13h): quarto (25) → piscina e bar (40) → área kids/brinquedoteca (30) → sauna e academia (25).
-GASTRONOMIA (12h–14h): Kaliz (35) → Duben (35) → bar (20) → cozinha (30).
-FIM DE TARDE (16h30–18h30): piscina em luz baixa (40) → fachada iluminada (30) → bar (30) → recepção (20).
+ROTEIRO (escolher o foco do dia)
+MANHÃ: café → caminho e praia (cronometrar o tempo a pé) → piscina.
+SOL FORTE: quarto → piscina e bar → área kids/brinquedoteca → sauna e academia.
+GASTRONOMIA: Kaliz → Duben → bar → cozinha.
+PÔR DO SOL: piscina em luz baixa → fachada iluminada → bar → recepção.
 
 POR CENA
 Fotos: ambiente vazio + detalhe + 1 plano com gente de costas.

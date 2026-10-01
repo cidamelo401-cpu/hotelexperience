@@ -127,7 +127,7 @@ code.k{font-family:var(--display);font-weight:800;background:var(--accent-soft);
 
   <section class="panel" id="p-visitas" data-panel="visitas">
     <h2>Kits de captação</h2>
-    <p class="lead">Cada visita tem cerca de 2 horas. Escolha o próximo kit da fila, no horário em que a luz estiver boa. Se o dia estiver com pôr do sol bonito, faça o kit Pôr do Sol. Toda segunda, avise quais são os 2 dias da semana e qual kit vai fazer.</p>
+    <p class="lead">Escolha o próximo kit da fila, no horário em que a luz estiver boa. Se o dia estiver com pôr do sol bonito, faça o kit Pôr do Sol. Toda segunda, avise quais são os 2 dias da semana e qual kit vai fazer.</p>
     <div class="stack" id="kits"></div>
   </section>
 
@@ -191,7 +191,7 @@ var KITS=[
    {t:"Montagem",m:30,f:["Mesa especial","Decoração","Itens da mesa"],v:["Time-lapse da montagem (15 s)"]},
    {t:"Café com os hóspedes",m:60,f:["Detalhes","Mãos de crianças","Costas","Mesa cheia"],v:["Plano geral do salão, sem rostos nítidos"]},
    {t:"Piscina e área kids",m:30,f:["Piscina sem rosto","Área kids sem rosto"],v:["Plano curto de cada ambiente"]}]},
- {id:"V4",n:"4",name:"Festa dos Filhos de Funcionários",luz:"A definir",hora:"cerca de 2 horas",prev:"segunda 12/10 · data fixa",fixed:true,feeds:[12,13],
+ {id:"V4",n:"4",name:"Festa dos Filhos de Funcionários",luz:"A definir",hora:"",prev:"segunda 12/10 · data fixa",fixed:true,feeds:[12,13],
   prep:"Lista de crianças autorizadas e aprovação da direção.",
   pessoas:"Só crianças com termo escrito do funcionário responsável. Sem termo, a criança fica fora.",
   blocks:[
@@ -324,14 +324,11 @@ function $(s,r){return (r||document).querySelector(s)}
 /* kits */
 var segCol=["58%","40%","76%","28%"];
 function kitHTML(k,i){
-  var tot=k.blocks.reduce(function(a,b){return a+b.m},0);
-  var bar=k.blocks.map(function(b,j){return '<i style="width:'+(b.m/tot*100)+'%;background:color-mix(in srgb,var(--accent) '+segCol[j%4]+',var(--surface))"></i>'}).join("");
-  var leg=k.blocks.map(function(b,j){return '<span>'+esc(b.t)+' · '+b.m+' min</span>'}).join("");
   var blocks=k.blocks.map(function(b){
-    return '<div class="block"><h3>'+esc(b.t)+' <span class="min">'+b.m+' min</span></h3><div class="cols"><div><div class="label">Fotos</div>'+li(b.f)+'</div><div><div class="label">Vídeos verticais</div>'+li(b.v)+'</div></div></div>';
+    return '<div class="block"><h3>'+esc(b.t)+'</h3><div class="cols"><div><div class="label">Fotos</div>'+li(b.f)+'</div><div><div class="label">Vídeos verticais</div>'+li(b.v)+'</div></div></div>';
   }).join("");
   var feeds=k.feeds.map(function(n){return '<button type="button" class="chip" data-day="'+n+'">Dia '+n+'</button>'}).join("");
-  return '<details class="kit" id="kit-'+k.id+'"'+(i===0?' open':'')+'><summary><span class="num'+(k.fixed?' fixed':'')+'">'+k.n+'</span><span><span class="sum-title">'+esc(k.name)+'</span><span class="sum-sub" style="display:block">'+esc(k.hora)+' · 2 horas</span><span class="tags"><span class="tag '+(k.fixed?'sun':'accent')+'">'+esc(k.luz)+'</span><span class="tag'+(k.fixed?' sun':'')+'">'+esc(k.prev)+'</span></span></span></summary><div class="body"><div><div class="bar" aria-hidden="true">'+bar+'</div><div class="bar-legend" style="margin-top:8px">'+leg+'</div></div>'+(k.extra?'<div class="note"><b>Atenção:</b> '+esc(k.extra)+'</div>':'')+'<div class="blocks">'+blocks+'</div><div class="cols"><div><div class="label">Pessoas e autorizações</div><p>'+esc(k.pessoas)+'</p></div><div><div class="label">O hotel deixa pronto</div><p>'+esc(k.prep)+'</p></div></div><div><div class="label">Este material vira os posts dos dias</div><div class="chips">'+feeds+'</div></div></div></details>';
+  return '<details class="kit" id="kit-'+k.id+'"'+(i===0?' open':'')+'><summary><span class="num'+(k.fixed?' fixed':'')+'">'+k.n+'</span><span><span class="sum-title">'+esc(k.name)+'</span>'+(k.fixed&&k.hora?'<span class="sum-sub" style="display:block">'+esc(k.hora)+'</span>':'')+'<span class="tags"><span class="tag '+(k.fixed?'sun':'accent')+'">'+esc(k.luz)+'</span><span class="tag'+(k.fixed?' sun':'')+'">'+esc(k.prev)+'</span></span></span></summary><div class="body">'+(k.extra?'<div class="note"><b>Atenção:</b> '+esc(k.extra)+'</div>':'')+'<div class="blocks">'+blocks+'</div><div class="cols"><div><div class="label">Pessoas e autorizações</div><p>'+esc(k.pessoas)+'</p></div><div><div class="label">O hotel deixa pronto</div><p>'+esc(k.prep)+'</p></div></div><div><div class="label">Este material vira os posts dos dias</div><div class="chips">'+feeds+'</div></div></div></details>';
 }
 $("#kits").innerHTML=KITS.map(kitHTML).join("");
 
