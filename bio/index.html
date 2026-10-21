@@ -31,9 +31,7 @@ header{position:relative;isolation:isolate;overflow:hidden;border-radius:28px;di
 header::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(10,28,51,.30) 0%,rgba(10,28,51,.62) 45%,rgba(10,28,51,.96) 100%)}
 header .where,header .facts li{text-shadow:0 1px 8px rgba(0,0,0,.45)}
 header .facts li{background:rgba(10,28,51,.45);border-color:rgba(255,255,255,.28);backdrop-filter:blur(4px)}
-.mark{width:104px;height:104px;border-radius:50%;box-shadow:0 0 0 3px rgba(242,169,59,.35),0 14px 34px rgba(0,0,0,.35)}
-.mark .w{animation:drift 7s ease-in-out infinite alternate}
-@keyframes drift{from{transform:translateX(-3px)}to{transform:translateX(3px)}}
+.mark{width:104px;height:104px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 3px rgba(242,169,59,.35),0 14px 34px rgba(0,0,0,.35)}
 h1{margin:10px 0 0;font-family:var(--display);font-style:italic;font-weight:600;font-size:34px;line-height:1.05;letter-spacing:-.01em;text-wrap:balance}
 .where{margin:0;color:var(--muted);font-size:14px;letter-spacing:.14em;text-transform:uppercase}
 .facts{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:8px 0 0;padding:0;list-style:none}
@@ -61,26 +59,14 @@ nav{display:flex;flex-direction:column;gap:12px}
 .coupon strong{font-family:var(--text);letter-spacing:.12em;color:var(--sun)}
 .coupon button{flex:none;font:inherit;font-weight:700;font-size:14px;color:var(--sun-fg);background:var(--sun);border:0;border-radius:999px;padding:9px 16px;cursor:pointer;min-width:92px}
 footer{margin-top:6px;text-align:center;color:var(--muted);font-size:13px}
-@media (prefers-reduced-motion:reduce){.mark .w{animation:none}.btn{transition:none}}
+@media (prefers-reduced-motion:reduce){.btn{transition:none}}
 </style>
 </head>
 <body>
 
 <div class="wrap">
   <header>
-    <svg class="mark" viewBox="0 0 120 120" role="img" aria-label="Logotipo Hotel Pousada Experience">
-      <defs><clipPath id="c"><circle cx="60" cy="60" r="60"/></clipPath></defs>
-      <circle cx="60" cy="60" r="60" fill="#1C3A63"/>
-      <g clip-path="url(#c)">
-        <circle cx="46" cy="30" r="9" fill="#F2A93B"/><circle cx="49" cy="28" r="6" fill="#1C3A63"/>
-        <g class="w">
-          <path d="M8 56 C32 46 54 62 72 54 C90 46 104 50 116 58 L116 64 C100 56 88 56 72 62 C54 70 30 56 8 62 Z" fill="#6FA8DC"/>
-          <path d="M14 68 C36 60 56 74 76 66 C92 60 104 62 112 66" fill="none" stroke="#6FA8DC" stroke-width="2.5" stroke-linecap="round" opacity=".7"/>
-        </g>
-        <text x="60" y="88" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-weight="700" font-size="17" fill="#F3F7FB">experience</text>
-        <text x="60" y="98" text-anchor="middle" font-family="Arial,sans-serif" font-size="5" letter-spacing=".6" fill="#F2A93B">João Fernandes · Búzios</text>
-      </g>
-    </svg>
+    <img class="mark" src="logo.jpg" width="104" height="104" alt="Logotipo Hotel Pousada Experience">
     <h1>Experience</h1>
     <p class="where" data-pt="Hotel Pousada · João Fernandes" data-es="Hotel Pousada · João Fernandes">Hotel Pousada · João Fernandes</p>
     <ul class="facts">
