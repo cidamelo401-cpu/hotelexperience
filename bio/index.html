@@ -98,6 +98,12 @@ footer{margin-top:6px;text-align:center;color:var(--muted);font-size:13px}
       <svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
     </a>
 
+    <a class="btn" id="transfer" href="https://wa.me/5522988516818" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 16V11l2-5h10l2 5v5"/><path d="M3 16h18v3h-3v-1.5H6V19H3Z"/><circle cx="7.5" cy="13" r=".6" fill="currentColor"/><circle cx="16.5" cy="13" r=".6" fill="currentColor"/></svg>
+      <span class="t"><b data-pt="Serviço de transfer" data-es="Servicio de transfer">Serviço de transfer</b><small data-pt="Peça seu traslado pelo WhatsApp" data-es="Pedí tu traslado por WhatsApp">Peça seu traslado pelo WhatsApp</small></span>
+      <svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+    </a>
+
     <a class="btn" id="site" href="https://experiencejoaofernandes.com.br/" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></svg>
       <span class="t"><b data-pt="Site do hotel" data-es="Sitio del hotel">Site do hotel</b><small data-pt="Quartos, fotos e serviços" data-es="Habitaciones, fotos y servicios">Quartos, fotos e serviços</small></span>
@@ -125,6 +131,8 @@ footer{margin-top:6px;text-align:center;color:var(--muted);font-size:13px}
     document.getElementById('pt').setAttribute('aria-pressed',l==='pt');
     document.getElementById('es').setAttribute('aria-pressed',l==='es');
     document.getElementById('coupon').hidden=(l==='es');
+    var msg=l==='es'?'Hola! Quisiera información sobre el servicio de transfer.':'Olá! Gostaria de informações sobre o serviço de transfer.';
+    document.getElementById('transfer').href='https://wa.me/5522988516818?text='+encodeURIComponent(msg);
     try{localStorage.setItem('bio-lang',l)}catch(e){}
   }
   document.getElementById('pt').onclick=function(){apply('pt')};
