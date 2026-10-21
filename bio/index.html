@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Experience João Fernandes</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,600&family=Figtree:wght@400;500;700&display=swap">
+<style>
+/* Layout: coluna única de celular, cabeçalho com mar animado, botão de reserva dourado em destaque, links secundários em vidro escuro. */
+:root{
+  --bg:#0F2744; --bg-deep:#0A1C33; --surface:rgba(255,255,255,.07); --surface-hover:rgba(255,255,255,.12);
+  --line:rgba(255,255,255,.16); --fg:#F3F7FB; --muted:#B4C6DB;
+  --sea:#6FA8DC; --sun:#F2A93B; --sun-fg:#2A1A00;
+  --display:'Fraunces',Georgia,'Times New Roman',serif;
+  --text:'Figtree',system-ui,-apple-system,'Segoe UI',sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{background:var(--bg-deep)}
+body{
+  margin:0;min-height:100%;background:var(--bg);color:var(--fg);font-family:var(--text);font-size:17px;line-height:1.45;
+  background-image:radial-gradient(120% 60% at 50% -10%,#1B4170 0%,transparent 60%),linear-gradient(180deg,var(--bg) 0%,var(--bg-deep) 100%);
+  background-attachment:fixed;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 40px;
+}
+.wrap{max-width:460px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+header{display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px}
+.mark{width:104px;height:104px;border-radius:50%;box-shadow:0 0 0 3px rgba(242,169,59,.35),0 14px 34px rgba(0,0,0,.35)}
+.mark .w{animation:drift 7s ease-in-out infinite alternate}
+@keyframes drift{from{transform:translateX(-3px)}to{transform:translateX(3px)}}
+h1{margin:10px 0 0;font-family:var(--display);font-style:italic;font-weight:600;font-size:34px;line-height:1.05;letter-spacing:-.01em;text-wrap:balance}
+.where{margin:0;color:var(--muted);font-size:14px;letter-spacing:.14em;text-transform:uppercase}
+.facts{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:8px 0 0;padding:0;list-style:none}
+.facts li{font-size:13.5px;padding:5px 12px;border:1px solid var(--line);border-radius:999px;color:var(--fg)}
+.lang{align-self:center;display:inline-flex;padding:3px;border:1px solid var(--line);border-radius:999px;gap:2px}
+.lang button{font:inherit;font-size:13px;font-weight:700;letter-spacing:.08em;color:var(--muted);background:none;border:0;border-radius:999px;padding:6px 16px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--fg);color:var(--bg-deep)}
+a,button{-webkit-tap-highlight-color:transparent}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+nav{display:flex;flex-direction:column;gap:12px}
+.btn{display:flex;align-items:center;gap:14px;min-height:64px;padding:12px 18px;border-radius:18px;text-decoration:none;color:var(--fg);background:var(--surface);border:1px solid var(--line);backdrop-filter:blur(6px);transition:transform .15s ease,background .15s ease}
+.btn:hover{background:var(--surface-hover);transform:translateY(-2px)}
+.btn svg{flex:none;width:26px;height:26px}
+.btn .t{display:flex;flex-direction:column;min-width:0;flex:1}
+.btn b{font-weight:700;font-size:17px}
+.btn small{color:var(--muted);font-size:13.5px}
+.btn .go{flex:none;width:18px;height:18px;opacity:.6}
+.btn.primary{min-height:84px;background:var(--sun);border-color:var(--sun);color:var(--sun-fg);box-shadow:0 12px 30px rgba(242,169,59,.28)}
+.btn.primary:hover{background:#F7B955}
+.btn.primary b{font-size:20px}
+.btn.primary small{color:rgba(42,26,0,.78)}
+.btn.primary .go{opacity:.8}
+.coupon{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px 12px 18px;border:1.5px dashed rgba(242,169,59,.7);border-radius:16px;margin-top:-2px}
+.coupon p{margin:0;font-size:14.5px;min-width:0}
+.coupon strong{font-family:var(--text);letter-spacing:.12em;color:var(--sun)}
+.coupon button{flex:none;font:inherit;font-weight:700;font-size:14px;color:var(--sun-fg);background:var(--sun);border:0;border-radius:999px;padding:9px 16px;cursor:pointer;min-width:92px}
+footer{margin-top:6px;text-align:center;color:var(--muted);font-size:13px}
+@media (prefers-reduced-motion:reduce){.mark .w{animation:none}.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <svg class="mark" viewBox="0 0 120 120" role="img" aria-label="Logotipo Hotel Pousada Experience">
+      <defs><clipPath id="c"><circle cx="60" cy="60" r="60"/></clipPath></defs>
+      <circle cx="60" cy="60" r="60" fill="#1C3A63"/>
+      <g clip-path="url(#c)">
+        <circle cx="46" cy="30" r="9" fill="#F2A93B"/><circle cx="49" cy="28" r="6" fill="#1C3A63"/>
+        <g class="w">
+          <path d="M8 56 C32 46 54 62 72 54 C90 46 104 50 116 58 L116 64 C100 56 88 56 72 62 C54 70 30 56 8 62 Z" fill="#6FA8DC"/>
+          <path d="M14 68 C36 60 56 74 76 66 C92 60 104 62 112 66" fill="none" stroke="#6FA8DC" stroke-width="2.5" stroke-linecap="round" opacity=".7"/>
+        </g>
+        <text x="60" y="88" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-weight="700" font-size="17" fill="#F3F7FB">experience</text>
+        <text x="60" y="98" text-anchor="middle" font-family="Arial,sans-serif" font-size="5" letter-spacing=".6" fill="#F2A93B">João Fernandes · Búzios</text>
+      </g>
+    </svg>
+    <h1>Experience</h1>
+    <p class="where" data-pt="Hotel Pousada · João Fernandes" data-es="Hotel Pousada · João Fernandes">Hotel Pousada · João Fernandes</p>
+    <ul class="facts">
+      <li data-pt="A cerca de 100 m da praia" data-es="A unos 100 m de la playa">A cerca de 100 m da praia</li>
+      <li data-pt="Café da manhã incluso" data-es="Desayuno incluido">Café da manhã incluso</li>
+    </ul>
+  </header>
+
+  <div class="lang" role="group" aria-label="Idioma / Idioma">
+    <button type="button" id="pt" aria-pressed="true">PT</button>
+    <button type="button" id="es" aria-pressed="false">ES</button>
+  </div>
+
+  <nav>
+    <a class="btn primary" id="book" href="https://book.omnibees.com/hotel/2093" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>
+      <span class="t"><b data-pt="Reservar no site oficial" data-es="Reservar en el sitio oficial">Reservar no site oficial</b><small data-pt="Veja as datas de dezembro e janeiro" data-es="Consultá las fechas de diciembre y enero">Veja as datas de dezembro e janeiro</small></span>
+      <svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+    </a>
+
+    <div class="coupon" id="coupon">
+      <p><span data-pt="5% de desconto no Pix com o cupom" data-es="">5% de desconto no Pix com o cupom</span> <strong>5PIXEXP</strong></p>
+      <button type="button" id="copy" data-pt="Copiar" data-es="">Copiar</button>
+    </div>
+
+    <a class="btn" id="wa" href="https://wa.me/SEU_NUMERO_AQUI" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 1-13.4 7.8L3 21l1.3-4.4A9 9 0 1 1 21 12Z"/><path d="M9 9c0 3 3 6 6 6l1.2-1.6-2-1-1 .6c-.8-.4-1.6-1.2-2-2l.6-1-1-2Z"/></svg>
+      <span class="t"><b>WhatsApp</b><small data-pt="Tire dúvidas com a recepção" data-es="Consultá con la recepción">Tire dúvidas com a recepção</small></span>
+      <svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+    </a>
+
+    <a class="btn" id="site" href="https://SEU_SITE_AQUI" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></svg>
+      <span class="t"><b data-pt="Site do hotel" data-es="Sitio del hotel">Site do hotel</b><small data-pt="Quartos, fotos e serviços" data-es="Habitaciones, fotos y servicios">Quartos, fotos e serviços</small></span>
+      <svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+    </a>
+
+    <a class="btn" id="map" href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Pousada+Experience+Praia+de+Jo%C3%A3o+Fernandes+B%C3%BAzios" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+      <span class="t"><b data-pt="Como chegar" data-es="Cómo llegar">Como chegar</b><small data-pt="Praia de João Fernandes, Búzios" data-es="Playa de João Fernandes, Búzios">Praia de João Fernandes, Búzios</small></span>
+      <svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+    </a>
+  </nav>
+
+  <footer data-pt="@experiencejoaofernandes" data-es="@experiencejoaofernandes">@experiencejoaofernandes</footer>
+</div>
+
+<script>
+(function(){
+  var lang='pt';
+  try{var s=localStorage.getItem('bio-lang');if(s==='es'||s==='pt')lang=s;else if((navigator.language||'').slice(0,2)==='es')lang='es';}catch(e){}
+  function apply(l){
+    lang=l;
+    document.documentElement.lang=l==='es'?'es':'pt-BR';
+    document.querySelectorAll('[data-pt]').forEach(function(el){el.textContent=el.getAttribute('data-'+l)});
+    document.getElementById('pt').setAttribute('aria-pressed',l==='pt');
+    document.getElementById('es').setAttribute('aria-pressed',l==='es');
+    document.getElementById('coupon').hidden=(l==='es');
+    try{localStorage.setItem('bio-lang',l)}catch(e){}
+  }
+  document.getElementById('pt').onclick=function(){apply('pt')};
+  document.getElementById('es').onclick=function(){apply('es')};
+  var btn=document.getElementById('copy');
+  btn.onclick=function(){
+    function done(){btn.textContent='Copiado';setTimeout(function(){btn.textContent='Copiar'},1800)}
+    function fallback(){var r=document.createRange();r.selectNodeContents(document.querySelector('#coupon strong'));var s=getSelection();s.removeAllRanges();s.addRange(r);try{document.execCommand('copy');done()}catch(e){}}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText('5PIXEXP').then(done,fallback)}else fallback();
+  };
+  apply(lang);
+})();
+</script>
+</body>
+</html>
